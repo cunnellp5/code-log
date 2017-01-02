@@ -39,3 +39,13 @@ function countDevelopers(list) {
 }
 
 console.log(countDevelopers(list1));
+
+function countDevelopers(list) {
+  var newArr = 0;
+ for(var i = 0; i < list.length; i++){
+   if(list[i].language === "JavaScript" && list[i].continent === "Europe")
+       newArr++
+  }
+  return newArr
+}
+console.log(countDevelopers(list1));

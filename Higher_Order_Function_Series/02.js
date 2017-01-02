@@ -36,12 +36,15 @@ var list1 = [
 // }
 
 
+//for each element in the array, add a string thing into the object
+
 function greetDevelopers(list) {
-  for (var prop in list) {
-    if (list.hasOwnProperty(prop)) {
-      console.log("list." + prop + " = " + list[prop]);
-    }
+  var newArr = [];
+  for (var i = 0; i < list.length; i++) {
+    var greet = 'Hi ' + list[i].firstName + ', what do you like the most about ' + list[i].language + '?';
+    newArr.push(greet)
   }
+  return newArr
 }
 
 console.log(greetDevelopers(list1));
