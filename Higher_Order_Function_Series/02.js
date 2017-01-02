@@ -28,10 +28,20 @@ var list1 = [
 // The order of the properties in the objects does not matter.
 // The input array will always be valid and formatted as in the example above.
 
+// function greetDevelopers(list) {
+//   var obj = {
+//
+//   }
+//
+// }
+
+
 function greetDevelopers(list) {
-  arr = list.map((element)=>  {
-    return element
-  })
-  return arr
+  for (var prop in list) {
+    if (list.hasOwnProperty(prop)) {
+      console.log("list." + prop + " = " + list[prop]);
+    }
+  }
 }
+
 console.log(greetDevelopers(list1));
