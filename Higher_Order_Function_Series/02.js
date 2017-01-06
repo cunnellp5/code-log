@@ -39,12 +39,17 @@ var list1 = [
 //for each element in the array, add a string thing into the object
 
 function greetDevelopers(list) {
+
   var newArr = [];
+
   for (var i = 0; i < list.length; i++) {
     var greet = 'Hi ' + list[i].firstName + ', what do you like the most about ' + list[i].language + '?';
-    newArr.push(greet)
+    newArr.push(greet);
   }
+  
+  list.forEach(function(entry) {
+    entry.greeting = newArr;
+  });
   return newArr
 }
-
 console.log(greetDevelopers(list1));
