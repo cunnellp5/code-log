@@ -6,11 +6,6 @@
 // Hi < firstName here >, what do you like the most about < language here >?
 // For example, given the following input array:
 
-var list1 = [
-  { firstName: 'Sofia', lastName: 'I.', country: 'Argentina', continent: 'Americas', age: 35, language: 'Java' },
-  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 35, language: 'Python' },
-  { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' }
-];
 
 // your function should return the following array:
 [
@@ -36,20 +31,17 @@ var list1 = [
 // }
 
 
+var list1 = [
+  { firstName: 'Sofia', lastName: 'I.', country: 'Argentina', continent: 'Americas', age: 35, language: 'Java' },
+  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 35, language: 'Python' },
+  { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' }
+];
 //for each element in the array, add a string thing into the object
 
 function greetDevelopers(list) {
-
-  var newArr = [];
-
-  for (var i = 0; i < list.length; i++) {
-    var greet = 'Hi ' + list[i].firstName + ', what do you like the most about ' + list[i].language + '?';
-    newArr.push(greet);
-  }
-  
   list.forEach(function(entry) {
-    entry.greeting = newArr;
+    entry.greeting = `Hi ${entry.firstName}, what do you like the most about ${entry.language}?`;
   });
-  return newArr
+  return list
 }
 console.log(greetDevelopers(list1));
