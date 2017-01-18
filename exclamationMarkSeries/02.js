@@ -8,9 +8,8 @@
 // remove("Hi") === "Hi"
 
 function remove(s){
-  let spl = s.split('')
-return s = spl.replace(/!+$/gm, '');
+return s = s.replace(/!+$/gm, '');
 }
 
 
-console.log(remove("He!! ho!"));
+console.log(remove("He!! ho!!!!!!!!"));
