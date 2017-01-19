@@ -18,20 +18,42 @@ var list1 = [
 // The input array will always be valid and formatted as in the example above.
 
 
-function isRubyComing(list) {
-  var emptyArr = 0;
+// function isRubyComing(list) {
+//   var emptyArr = 0;
+//
+//   for (var i = 0; i < list.length; i++) {
+//     if(list[i].language === "Ruby")
+//         emptyArr++
+//     }
+//     if (emptyArr > 0) {
+//       return true
+//     } else {
+//       return false
+//     }
+//     return emptyArr
+//   }
+// console.log(isRubyComing(list1));
+//
+//
+//
+//
 
-  for (var i = 0; i < list.length; i++) {
-    if(list[i].language === "Ruby")
-        emptyArr++
+function isRubyComing(list){
+  list.forEach(function(entry){
+    if (entry.langugage === 'Ruby') {
+
     }
-    if (emptyArr > 0) {
-      return true
-    } else {
-      return false
-    }
-    return emptyArr
-  }
-
-
+    console.log(entry.language);
+  })
+  return list
+}
 console.log(isRubyComing(list1));
+
+//
+// function greetDevelopers(list) {
+//   list.forEach(function(entry) {
+//     entry.greeting = `Hi ${entry.firstName}, what do you like the most about ${entry.language}?`;
+//   });
+//   return list
+// }
+// console.log(greetDevelopers(list1));
