@@ -46,39 +46,42 @@
 // if (getLetters[i] === 'a') {
 //   count++
 // }
-// function replaceNth(text, n, oldValue, newValue) {
-//   var getLetters = text.split('');
-//   var replacedLetters = [];
-//
-//   for (var i = 0; i < getLetters.length; i++) {
-//     aArray = [];
-//     if (getLetters[i] === 'a') {
-//       aArray.push(getLetters[i])
-//     }
-//     aArray.forEach(function(element, index){
-//       return (index + 1)
-//     })
-//     console.log(aArray);
-//     replacedLetters.push(getLetters[i].replace(oldValue, newValue))
-//   }
-//   return replacedLetters
-// }
-//
-// console.log(replaceNth("Vader said: No, I am your father!", 2, 'a', 'o'));
-
-
-
 function replaceNth(text, n, oldValue, newValue) {
-  var getLetters = text.split('');
-  var replacedLetters = [];
-
+  var getLetters = text.split(''); // split into array
+  var replacedLetters = []; // replaced all o's so far
+  var counter = 0 // 4
   for (var i = 0; i < getLetters.length; i++) {
-    if (getLetters[i] === oldValue && replacedLetters.length % 2 === 0) {
-
+    if (getLetters[i] === oldValue) {
+      counter ++
+      if ((counter % n) === 0) {
+        replacedLetters.push(getLetters[i])
+      }
     }
-    replacedLetters.push(getLetters[i].replace(oldValue, newValue))
+    replacedLetters.push(getLetters[i])
   }
-  return replacedLetters
-}
+  var betterize = replacedLetters.join('')
+  if (n < 0) {
+    return text
+  } else {
 
-console.log(replaceNth("Vader said: No, I am your father!", 2, 'a', 'o'));
+    var double = oldValue+oldValue
+    return  betterize.replace( new RegExp( double, 'g' ), newValue );
+  }
+}
+console.log(replaceNth("Luke cries: Noooooooooooooooo!", 6, 'o', 'i'));
+
+
+// function replaceNth(text, n, oldValue, newValue) {
+//   var getWords = text.split(''); // split into array of words
+//   var indexes = [];// index of every point in array
+//   var count = 0; // counts how many oldvalues
+//
+//   for (var i = 0; i < getWords.length; i++) {
+//     indexes.push(i)
+//     if (getWords[i] === oldValue) {
+//       count++
+//     }
+//   }
+// return getWords
+// }
+// console.log(replaceNth("Vader said: No, I am your father!", 2, 'a', 'o'));
