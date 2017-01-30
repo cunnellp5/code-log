@@ -38,7 +38,7 @@ function lowestTemp(t) {
     for (var i = 0; i < numbs.length; i++) {
       emptyArr.push(Number(numbs[i]))
     }
-    return Math.min(...emptyArr);
+    return Math.min(emptyArr);
 
   }
 }
