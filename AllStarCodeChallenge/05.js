@@ -9,8 +9,6 @@ var rockySeries = ["Rocky", "Rocky II", "Rocky III", "Rocky IV"];
 // randomMovies(rockySeries) // => "Rocky
 
 function randomMovies (array) {
-  min = Math.ceil(0);
-  max = Math.floor(array.length);  
-  return array[(Math.floor(Math.random() * ((array.length-1) - 0 + 1)) + 0)]
+  return array[(Math.floor(Math.random() * (array.length)))]
 }
 console.log(randomMovies(rockySeries));
