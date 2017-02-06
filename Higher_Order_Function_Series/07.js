@@ -65,9 +65,9 @@ function findSenior(list) {
     }
   })
 
-  return list.filter((singleFuck, fucksIndex, fuckArray)=>{
-    if (singleFuck.age >= maxAge) {
-      return singleFuck
+  return list.filter((element)=>{
+    if (element.age >= maxAge) {
+      return element
     }
   })
 }
