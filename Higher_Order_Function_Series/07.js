@@ -59,13 +59,13 @@ function findSenior(list) {
   var orgy = {age: 0};
   var maxAge = 0
 
-  list.forEach(function(obj){
+  list.forEach((obj)=>{
     if (obj.age > maxAge) {
       maxAge = obj.age
     }
   })
 
-  return list.filter(function(singleFuck, fucksIndex, fuckArray){
+  return list.filter((singleFuck, fucksIndex, fuckArray)=>{
     if (singleFuck.age >= maxAge) {
       return singleFuck
     }
