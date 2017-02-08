@@ -19,6 +19,10 @@ function isPalindrome (str) {
   var forwards = [];
   var backwards = [];
 
+  if (!isNaN(str)) {
+    return err
+  }
+
   for (var i = 0; i < str.length; i++) {
     forwards.push(str[i])
   }
@@ -32,3 +36,4 @@ function isPalindrome (str) {
   }
 }
 console.log(isPalindrome("hannah"));
+console.log(isPalindrome(1));
