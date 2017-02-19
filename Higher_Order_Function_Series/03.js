@@ -41,7 +41,6 @@ var list1 = [
 function isRubyComing(list){
   list.forEach(function(entry){
     if (entry.langugage === 'Ruby') {
-
     }
     console.log(entry.language);
   })

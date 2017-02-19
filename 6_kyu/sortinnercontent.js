@@ -16,7 +16,7 @@ function sortTheInnerContent(words) {
   var word = words.split(" ")
 
   for (var i = 0; i < word.length; i++) {
-    if (word[i].length = 1) {
+    if (word[i].length < 3) {
       newWords.push[word[i]]
     }
     newWords.push(word[i].substr(0,1) + word[i].substr(1, word[i].length-2).split("").sort().reverse().join("") + word[i].substr(word[i].length-1, word[i].length))
