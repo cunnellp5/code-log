@@ -33,4 +33,16 @@ function zipArrays (arrOne, arrTwo){
   }
   return result
 }
-console.log(zipArrays([1,2,3], [4,5,6]));
+
+
+function zipArrays (arrOne, arrTwo){
+  var result = [];
+  while (arrOne.length > 0 && arrTwo.length > 0) {
+    result.push(arrOne.shift());
+    result.push(arrTwo.shift());
+  }
+  result = result.concat(arrOne)
+  result = result.concat(arrTwo)
+  return result
+}
+console.log(zipArrays([1,2,3], [4,5,6,7,8,9,10]));
