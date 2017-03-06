@@ -2,7 +2,6 @@
 // return true if each opening has a closing
 // other wise return false
 
-
 function parensChecker (str) {
   var ray = str.split('');
   var compArr = [];
