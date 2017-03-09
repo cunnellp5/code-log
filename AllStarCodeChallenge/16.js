@@ -12,7 +12,6 @@
 //  ALWAYS be at least one non-repeating letter in the input string
 
 function noRepeat(str) {
-  var empty = [];
   for (var i = 0; i < str.length; i++) {
     var character = str.charAt(i);
     if (str.indexOf(character) == i && str.indexOf(character, i + 1) == -1) {
