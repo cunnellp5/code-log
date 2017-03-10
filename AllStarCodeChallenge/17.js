@@ -18,6 +18,11 @@
 // Using a Date object can automatically figure out the day of the week for you
 
 function findYear(month, dayOfWeek){
-  return new Date(month, dayOfWeek)
+  var date = new Date()
+  var empty = [];
+  for (var i = 0; i < date.length; i++) {
+    empty.push(date[i])
+  }
+  return empty
 }
 console.log(findYear(2,2));

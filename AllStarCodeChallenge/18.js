@@ -14,3 +14,13 @@
 // Note:
 // The first argument can be an empty string
 // The second string argument will always be of length 1
+
+function strCount(str, letter){  
+ counter = 0;
+ for (var i = 0; i < str.length; i++) {
+   if (letter === str[i]) {
+     counter++
+   }
+ }
+return counter
+}
