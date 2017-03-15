@@ -39,7 +39,7 @@ function sc (array) {
   //     max.push(multiply)
   // }\
   while (sortMe > 0) {
-    
+    sou
   }
   var matrix = max.splice(1,max.length)
   var sort = matrix.sort(function(a,b){
