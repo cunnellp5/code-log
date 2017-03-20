@@ -7,13 +7,13 @@ function dirReduc(arr){
   var answer = [];
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === "NORTH") {
-      n.push(arr[i])
+      answer.push(arr[i])
     } else if (arr[i] === "SOUTH") {
-      s.push(arr[i])
+      answer.push(arr[i])
     } else if (arr[i] === "EAST") {
-      e.push(arr[i])
+      answer.push(arr[i])
     } else if (arr[i] === "WEST") {
-      w.push(arr[i])
+      answer.push(arr[i])
     }
   }
 
