@@ -56,3 +56,28 @@ console.log(isRubyComing(list1));
 //   return list
 // }
 // console.log(greetDevelopers(list1));
+
+
+
+methods: {
+  grabIssues() {
+    this.$http.get('http://localhost:3000/issues')
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        data.forEach(function(entry){
+          if (entry.isActive === true) {
+            const resultArray = [];
+            for (let key in data) {
+              console.log("FUUUUUCK");
+              resultArray.push(data[key])
+            }
+            this.issues = resultArray
+          }
+          // console.log(entry.isActive);
+        })
+        // console.log(data)
+      })
+  }
+}

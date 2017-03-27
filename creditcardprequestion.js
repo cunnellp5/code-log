@@ -16,6 +16,9 @@
 //  last one with that sum, in this case '4252-278893-7978'
 
 function creditCards (array) {
+  while (array.length != []) {
+
+  }
   var addMe = array.pop();
   var add = 0;
   var empty = [];
@@ -25,7 +28,7 @@ function creditCards (array) {
       add = add + parseInt(addMe[i])
     }
   }
-  
+
 }
 
 console.log(creditCards(['4916-2600-1804-0530', '4779-252888-3972', '4252-278893-7978', '4556-4242-9283-2260'] ));
