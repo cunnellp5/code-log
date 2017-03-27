@@ -19,7 +19,7 @@ function replaceAll (seq, find, replace) {
       holdArr.push(seq[i])
     }
   }
-  if (holdArr[0] === isNaN) {
+  if (typeof holdArr[0] === 'string') {
     return holdArr.join('')
   } else {
     return holdArr
