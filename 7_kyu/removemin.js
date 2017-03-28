@@ -21,10 +21,8 @@
 // Examples
 
 function removeSmallest(numbers) {
-  
   var min = numbers[0];
   var index = 0;
-
   for (var i = 0; i < numbers.length; i++) {
     if (numbers[i] < min) {
       min = numbers[i]
