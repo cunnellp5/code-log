@@ -27,7 +27,7 @@ function countLetters (string) {
         // increment counter for given char obj[char]++
         counter[string[i]]++;
       } else {
-        counter[string[i]] = 1
+        counter[string[i]] = 1;
       }
     }
   }
