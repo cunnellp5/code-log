@@ -19,19 +19,29 @@
 function countLetters (string) {
   let counter = {};
   string = string.toLowerCase();
-  // iterate over the chars of the string
   for (var i = 0; i < string.length; i++) {
-    // check to see if a letter
     if (string[i] <= 'z' && string[i] >= 'a') {
-      if (counter.hasOwnProperty(string[i])) {
-        // increment counter for given char obj[char]++
+      if (counter[(string[i])]) {
         counter[string[i]]++;
       } else {
         counter[string[i]] = 1;
       }
     }
   }
-  // print out the char counts
   return counter
 }
-console.log(countLetters("Hello asdfaslfjafdshkasdlhjasffsd;flkasjhdladskfj;aWorld"));
+
+console.log(countLetters('simple'));
+
+
+
+function view (shit) {
+  var str = "az";
+  var n = str.charCodeAt(0);
+
+  for (var i = str.charCodeAt(0); i < str.charCodeAt(1); i++) {
+
+  }
+  return i
+}
+console.log(view('hello'));
