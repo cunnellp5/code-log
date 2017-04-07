@@ -17,6 +17,9 @@
 // "The quick brown fox jumps over the lazy dog and the sleeping cat early in the day."
 
 function countLetters (string) {
+  if (typeof string !== 'string') {
+    return null
+  }
   let counter = {};
   string = string.toLowerCase();
   for (var i = 0; i < string.length; i++) {
@@ -31,7 +34,17 @@ function countLetters (string) {
   return counter
 }
 
-console.log(countLetters('simple'));
+function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 50; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+console.log(countLetters(makeid()));
 
 
 
