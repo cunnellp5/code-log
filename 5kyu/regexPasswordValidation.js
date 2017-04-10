@@ -7,11 +7,7 @@
 // contains a number
 // Valid passwords will only be alphanumeric characters.
 
-function validate(password) {
-  return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password);
-}
-console.log(validate('djI38D55')); // true
-console.log(validate('a2.d412')); // false
+
 
 //    /^[a-z]{6,}$/     >> shows at least 6 characters
 //    ^                  // the start of the string
@@ -21,3 +17,10 @@ console.log(validate('a2.d412')); // false
 //    (?=.*[_\W])        // use positive look ahead to see if at least one underscore or non-word character exists
 //    .+                 // gobble up the entire string
 //    $                  // the end of the string
+
+
+function validate(password) {
+  return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password);
+}
+console.log(validate('djI38D55')); // true
+console.log(validate('a2.d412')); // false
