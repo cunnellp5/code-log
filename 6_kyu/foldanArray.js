@@ -33,7 +33,6 @@
 
 
 function foldArray(array, runs) {
-
   var chop = array.splice((array.length + 1)/2, array.length-1);
   chop.reverse();
   var c = array.map(function(e,i){
