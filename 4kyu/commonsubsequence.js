@@ -57,10 +57,8 @@
 function LCS(x, y) {
   var answer = '';
   var inc = 0;
-
   for (var i = 0; i < y.length; i++) {
     for (var j = inc; j < x.length; j++) {
-
       if (y[i] === x[j]) {
         answer += x[j]
         i++
