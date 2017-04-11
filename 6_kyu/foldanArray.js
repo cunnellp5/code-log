@@ -32,18 +32,64 @@
 // The input array should not be modified!
 
 
+// function foldArray(array, runs) {
+//   while (runs > 0) {
+//     runs = runs
+//     console.log(runs);
+//   var chop = array.splice((array.length + 1)/2, array.length-1);
+//   chop.reverse();
+//   var c = array.map(function(e,i){
+//     if (chop[i] === undefined) {
+//       chop[i] = 0;
+//     } else if (array[i] === undefined) {
+//       array[i] = 0;
+//     }
+//     return array[i] + chop[i]
+//   })
+//   runs--
+//   return c
+//   }
+// }
+
+// function foldArray(array, runs) {
+//   while (runs > 0) {
+//     var chop = array.splice((array.length + 1)/2, array.length - 1);
+//     chop.reverse();
+//     var c = array.map(function(e,i){
+//       if (chop[i] === undefined) {
+//         chop[i] = 0;
+//       } else if (array[i] === undefined) {
+//         array[i] = 0;
+//       }
+//       return array[i] + chop[i]
+//     })
+//     runs --
+//   }
+//   return c
+// }
+
 function foldArray(array, runs) {
-  var chop = array.splice((array.length + 1)/2, array.length-1);
-  chop.reverse();
-  var c = array.map(function(e,i){
-    if (chop[i] === undefined) {
-      chop[i] = 0;
-    } else if (array[i] === undefined) {
-      array[i] = 0;
-    }
-    return array[i] + chop[i]
-  })
-  return c
+  while (runs > 0) {
+
+    var chop = array.splice((array.length + 1)/2, array.length - 1);
+    chop.reverse();
+
+    var c = array.map(function(e,i){
+      if (chop[i] === undefined) {
+        chop[i] = 0;
+      } else if (array[i] === undefined) {
+        array[i] = 0;
+      }
+      return array[i] + chop[i]
+    })
+    runs --
+    array = c
+  }
+  return array
 }
 
-console.log(foldArray([1,2,3,4,5], 3)); // [6, 6, 3]
+console.log(foldArray([1,2,3,4,5], 1)); // [6,6,3]
+console.log(foldArray([1,2,3,4,5], 2)); // [9, 6]
+console.log(foldArray([1,2,3,4,5], 3)); // [15]
+// console.log(foldArray([6,6,3], 1)); // [9, 6]
+// console.log(foldArray([9,6], 1));
