@@ -16,7 +16,7 @@ function dirReduc(arr){
       answer.push(arr[i])
     }
   }
-
+  return answer
 }
 console.log(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]));
 console.log(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]));
