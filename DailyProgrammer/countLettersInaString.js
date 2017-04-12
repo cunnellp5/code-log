@@ -33,6 +33,7 @@ function countLetters (string) {
   }
   return counter
 }
+console.log(countLetters('ppoop'));
 
 function makeid()
 {
@@ -44,7 +45,6 @@ function makeid()
 
     return text;
 }
-console.log(countLetters(makeid()));
 
 
 
