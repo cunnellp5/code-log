@@ -47,24 +47,32 @@
 
 function recurrence(base, formula, term) {
   if (term <= base) {
-    return 1
+    return base
   } else {
-    return recurrence(base, formula, term - 1)
+    return recurrence(base)
   }
 }
 console.log(recurrence (1, n => n + 3, 5));
 // console.log(recurrence (3, n => 2 * n, 5));
 
-
-function revString(str){
-  if (str.length < 1) {
-    return  str
-  }
-  return revString(str.substr(1)) + str[0]
-}
-console.log(revString('rev'));
-
-
+//
+// function revString(str){
+//   if (str.length <= 1) {
+//     return  str
+//   }
+//   return revString(str.substr(1)) + str[0]
+// }
+// console.log(revString('erofatrev'));
+// function fib (n) {
+//   if (n <= 0) {
+//     return 0
+//   } else if (n <= 2) {
+//     return 1
+//   } else {
+//     return fib(n-2) + fib(n-1)
+//   }
+// }
+// console.log(fib(2)); // 8
 
 // recursion of sum example
 // function sum (n) {
@@ -76,12 +84,28 @@ console.log(revString('rev'));
 // }
 // console.log(sum(5));
 
-// recursion of factorial:
-// function factorial (n) {
-//   if (n == 0) {
-//     return 1
-//   } else {
-//     return n * factorial(n-1)
-//   }
+function factorial (n) {
+  if (n == 0) {
+    return 1
+  } else {
+    return n * factorial(n-1)
+  }
+}
+console.log(factorial(3));
+
+// assert.equal(sum(10, 89, 4), 103);
+
+
+// function sum (int) {
+//   return (x + y + z)
 // }
-// console.log(factorial(3));
+// console.log(sum(10, 89, 4));
+
+
+// var numbers = [1,2,3,4]
+// var string = ['a', 'b', 'c']
+// function spread (ray1, ray2) {
+//
+//   return [...ray1, ...ray2]
+// }
+// console.log(spread(numbers, string));
