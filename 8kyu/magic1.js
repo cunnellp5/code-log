@@ -4,9 +4,10 @@
 //  true, since technically nothing failed the test.
 
 function all( arr, fun ){
-  return arr.every(function(element){
-    return element < fun
-  })
+  if (fun() === NaN) {
+    return false
+  }
+  fun() === true ? true : false
 }
 
 console.log(all([1,2,3,4,5], 9));
