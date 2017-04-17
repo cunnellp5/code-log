@@ -14,4 +14,10 @@ function invert(array) {
  })
 }
 
-console.log(invert([1,2,3,4,5]));
+
+// learning about 'bitwise' >> the '~~' 
+// function invert(array) {
+//    return array.map(e=>~~-e);
+// }
+//
+// console.log(invert([1, 0]));
