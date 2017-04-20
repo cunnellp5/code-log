@@ -33,9 +33,12 @@ var list1 = [
 // Order of the objects in the array should be maintained but order of the
 // properties in the individual objects does not matter.
 
+
 function addUsername(list) {
+  const currentYear = (new Date()).getFullYear();
+  console.log(currentYear);
   list.forEach(function(obj){
-    obj.username = `${obj.firstName}`.toLowerCase() + `${obj.lastName}`[0].toLowerCase() + (2020 - `${obj.age}`)
+    obj.username = `${obj.firstName}`.toLowerCase() + `${obj.lastName}`[0].toLowerCase() + (currentYear - `${obj.age}`)
   })
   return list
 }
