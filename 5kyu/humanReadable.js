@@ -7,13 +7,14 @@
 // The maximum time never exceeds 359999 (99:59:59)
 
 function humanReadable(seconds) {
+  // counting variables
   var mins = 0;
   var hours = 0;
   var sec = 0;
-
+  // mini functions
   var mm = seconds / 60
   var hr = mm / 60
-
+  // defines each human readable variable
   while (seconds >= 60) {
     mins = mm
     seconds -= 60
@@ -25,16 +26,7 @@ function humanReadable(seconds) {
   if (seconds < 60) {
     sec = seconds
   }
-  // prepend a 0 for numbers < 10 some how
-  // if (sec < 10) {
-  //   sec = '0' + sec
-  // }
-  // if (mins < 10) {
-  //   mins = '0' + mins
-  // }
-  // if (hours < 10) {
-  //   hours = '0' + hours
-  // }
+  // prepends the zero for readabilitity
   var answer = [Math.trunc(hours), Math.trunc(mins), sec]
   if (answer[0] < 10) {
     answer[0] = '0' + answer[0]
@@ -45,6 +37,7 @@ function humanReadable(seconds) {
   if (answer [2] < 10) {
     answer[2] = '0' + answer[2]
   }
+  // get duh answer
   return answer.join(':')
 }
 
