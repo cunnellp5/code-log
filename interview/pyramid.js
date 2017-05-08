@@ -17,11 +17,7 @@
 //   ###
 //   ##
 //   #
-var result = '';
-for (var line = "#"; line.length < 8; line += "#")
-result = line
-  console.log(result);
-
+tom
 
 // third  (not a right tri)
 //   #####
