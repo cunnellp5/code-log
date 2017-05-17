@@ -43,11 +43,14 @@ function censorThis(text, forbiddenWords) {
 
 function stars (word) {
   let stars = '';
-  for (var k = 0; k < word.length; k++) {
-    stars += '*';
-  }
+  word = word.split('');
+  word.map(element => { element = '*', stars += element })
   return stars
 }
 
 console.log(censorThis("The cat does not like the therapy",["the","like"]));
 //"*** cat does not **** *** therapy")
+
+// for (var k = 0; k < word.length; k++) {
+//   stars += '*';
+// }
