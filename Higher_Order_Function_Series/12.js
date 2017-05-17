@@ -28,12 +28,16 @@ var list1 = [
 // way (e.g. 'JavaScript' will always be formatted with upper-case 'J' and 'S'.
 
 function findAdmin(list, lang) {
-  return list.filter(function(element) {
-    if (element.language == lang && element.githubAdmin === 'yes') {
-      return element
-    } else if (element.githubAdmin === 'no') {
-      element = []
-    }
+  return list.filter((element) => {
+    return check(element, lang)
   })
+}
+
+function check (obj, lang) {
+  if (obj.language == lang && obj.githubAdmin === 'yes') {
+    return obj
+  } else if (obj.githubAdmin === 'no') {
+    obj = []
+  }
 }
 console.log(findAdmin(list1, 'JavaScript'));
