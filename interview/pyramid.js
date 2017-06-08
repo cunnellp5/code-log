@@ -17,7 +17,7 @@
 //   ###
 //   ##
 //   #
-tom
+
 
 // third  (not a right tri)
 //   #####
@@ -54,3 +54,19 @@ tom
     //   }
     //   document.write('<br/>')
     // }
+
+
+
+
+for (var i = 0; i < 5; i++) {
+  for (var j = 0; j < i; j++) {
+    console.log(' ');
+  }
+  for (var j = 5; j > i; j--) {
+    console.log('*');
+    if (j > i + 1) {
+      console.log(' ');
+    }
+  }
+  console.log(</br>);
+}

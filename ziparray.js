@@ -10,7 +10,6 @@ function zipArrays (arrone, arrtwo){
 }
 
 
-
 function zipArrays (arrOne, arrTwo){
   var joined = arrOne.concat(arrTwo)
   var result = [];
@@ -33,6 +32,7 @@ function zipArrays (arrOne, arrTwo){
   }
   return result
 }
+console.log(zipArrays([1,2,3],[4,5,6]));
 
 
 function zipArrays (arrOne, arrTwo){
