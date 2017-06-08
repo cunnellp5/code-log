@@ -33,7 +33,7 @@ var list1 = [
 //   })
 //   return firstName
 // }
-function odd (array) {
+function findOddNames (array) {
   let counts = array.map((element) => {
     let splits = element.firstName.split('');
     let totalCount = 0;
@@ -42,14 +42,16 @@ function odd (array) {
     })
     return totalCount
   })
-
+  let result = []
   for (var i = 0; i < counts.length; i++) {
-    if (counts[i] % 2 === 0) {
-      return []
-    } else {
-      return [array[i]]
+    if (counts[i] % 2 == 1) {
+      result.push(array[i])
     }
   }
+  if (!result) {
+    return []
+  }
+  return result
 }
 
 console.log(odd(list1));
