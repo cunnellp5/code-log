@@ -35,6 +35,7 @@ var list1 = [
 // }
 function findOddNames (array) {
   let counts = array.map((element) => {
+
     let splits = element.firstName.split('');
     let totalCount = 0;
     splits.forEach((element) => {
@@ -54,4 +55,4 @@ function findOddNames (array) {
   return result
 }
 
-console.log(odd(list1));
+console.log(findOddNames(list1));
