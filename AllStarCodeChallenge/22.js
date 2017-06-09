@@ -18,9 +18,11 @@
 
 
 function toTime(seconds) {
-  let min = seconds/60;
-  let hr = min/60;
-  return hr + ' hour(s) and ' + min + ' minute(s)'
+  floor = Math.floor(Math.floor(seconds/60)/60)
+  hr = ((seconds / 60) / 60)
+  min = Math.floor(((hr - floor) * 60))
+
+  return `${floor} hour(s) and ${min} minute(s)`
 }
 
 console.log(toTime(3600)); // '1 hour(s) and 0 minute(s)'

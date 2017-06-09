@@ -21,15 +21,15 @@ var list1 = [
 ];
 
 function askForMissingDetails(list) {
-  list.forEach((element) => {
-    for (var key in element) {
-      if (element[key] == null) {
-        element.question = `Hi, could you please provide your ${key}.`
-      }
-    }
-  })
   return list.filter((el) => {
-      return !!el.question
+    list.forEach((element) => {
+      for (var key in element) {
+        if (element[key] == null) {
+          element.question = `Hi, could you please provide your ${key}.`
+        }
+      }
+    })
+    return !!el.question
   })
 }
 console.log(askForMissingDetails(list1));

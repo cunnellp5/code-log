@@ -28,8 +28,6 @@ var list1 = [
 // the same name.
 //
 
-
-
 function sortByLanguage(list) {
   var lan = list.map(function(element){
     return element.language
