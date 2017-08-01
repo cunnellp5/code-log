@@ -20,6 +20,10 @@
 //   }
 //   return multiple
 // }
+
+
+
+// second solution
 function multiplyAll (array) {
   function multiple (mult) {
     return array.map((element) => element * mult )
