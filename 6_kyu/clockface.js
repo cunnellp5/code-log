@@ -31,26 +31,40 @@
 // var whatTimeIsIt = function(angle) {
 //   return "12:00";
 // }
+//
+// function whatTimeIsIt (angle) {
+//   var ratio = 360/12;
+//   var hour = Math.floor(angle / ratio);
+//   var min = Math.floor(((angle / ratio) - hour) * 60);
+//   if (angle === 0) {
+//     return '12:00'
+//   }
+//   return hour < 10 && min < 10
+//     ? `0${hour}:${min}0` : min < 10
+//     ? `${hour}:${min}0` : hour < 10
+//     ? `0${hour}:${min}` : `${hour}:${min}`
+// }
+
 
 function whatTimeIsIt (angle) {
   var ratio = 360/12;
   var hour = Math.floor(angle / ratio);
   var min = Math.floor(((angle / ratio) - hour) * 60);
-  if (angle === 0) {
-    return '12:00'
+  if (angle < 30) {
+    return `12:${min}`
   }
   return hour < 10 && min < 10
     ? `0${hour}:${min}0` : min < 10
-    ? `${hour}:${min}0` : hour < 10
+    ? `${hour}:0${min}` : hour < 10
     ? `0${hour}:${min}` : `${hour}:${min}`
 }
 
-console.log(whatTimeIsIt(0));   //'12:00'
-console.log(whatTimeIsIt(90));  //'03:00'
-console.log(whatTimeIsIt(180)); //'06:00'
-console.log(whatTimeIsIt(270)); //'09:00'
-console.log(whatTimeIsIt(360)); //'12:00'
-console.log(whatTimeIsIt(53));
+console.log(whatTimeIsIt(4));   //'12:00'
+// console.log(whatTimeIsIt(90));  //'03:00'
+// console.log(whatTimeIsIt(180)); //'06:00'
+// console.log(whatTimeIsIt(270)); //'09:00'
+// console.log(whatTimeIsIt(360)); //'12:00'
+// console.log(whatTimeIsIt(27.058451758725674));
 
 // 12:00 = 0 degrees
 // 03:00 = 90 degrees
