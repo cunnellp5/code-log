@@ -33,7 +33,7 @@ const winnerList1 = [
 
 // super refactor
 function countWins(winnerList, country) {
-  return winnerList.map(element => element.country).filter(el => el === country).length
+  return winnerList.map(win => win.country).filter(tot => tot === country).length
 }
 
 console.log(countWins(winnerList1, 'Spain'));
