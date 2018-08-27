@@ -11,9 +11,11 @@ function dayTime() {
 
 function getTimeOfDay() {
   let hour = new Date().getHours();
+     (hour > 12) ? hour - 12 : hour;
   let min = new Date().getMinutes();
   let sec = new Date().getSeconds();
   let stamp = ((hour >= 12) ? 'PM' : 'AM');
+
   return `Current time is : ${hour} ${stamp} : ${min} : ${sec}`;
 }
 
@@ -24,3 +26,6 @@ function getWeekDay() {
 }
 
 console.log(dayTime());
+// at the time, yielded:
+// Today is : Thursday. 
+// Current time is : 8 AM : 34 : 58
