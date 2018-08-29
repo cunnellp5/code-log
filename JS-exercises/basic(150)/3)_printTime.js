@@ -7,7 +7,7 @@ function currentDate() {
   let month = getMonth();
   let day = getDay();
   let year = getYear();
-  return `${month}-${day}-${year}`
+  return `${month}-${day}-${year}, ${month}/${day}/${year} or ${day}-${month}-${year}, ${day}/${month}/${year}`
 }
 
 function getMonth() {
@@ -18,7 +18,7 @@ function getMonth() {
 
 function getDay() {
   let day = new Date().getUTCDate()
-  return day
+  return day < 10 ? `0${day}` : day;
 }
 
 function getYear() {
