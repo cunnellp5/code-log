@@ -1,5 +1,9 @@
 var div = document.createElement('div');
 
+div.setAttribute(
+  "style",
+  "color:red; display:flex; justify-content:center;");
+
 function calcDaysTillXMas() {
   setInterval(() => {
     let diff;
@@ -21,13 +25,36 @@ function calcDaysTillXMas() {
     var hours = Math.abs(Math.floor(diff % 24));
     var days = Math.abs(Math.floor(diff / 24));
 
-    date = `🎄 ${days}:${hours}:${minutes}:${seconds} 🎄<br>🎄(dd:hh:mm:ss)🎄`;
+    date = `🎄 ${days}:${hours}:${minutes}:${seconds} 🎄`;
     div.innerHTML = date
     document.body.appendChild(div)
   },1000)
 }
+calcDaysTillXMas();
 
-calcDaysTillXMas()
+
+
+function alternateColors() {
+  let el = document.getElementsByTagName('h1')[0];
+  let string = document.getElementsByTagName('h1')[0].innerHTML;
+  let output = '';
+  // string.setAttribute(
+  //   "style",
+  //   "color:red; display:flex; justify-content:center;");
+  console.log(string)
+  for (let i = 0; i < string.length; i++) {
+    color = i % 2 === 0 ? 'red' : 'green';
+    output += '<span style="color:'+color+';">' + string[i] + '</span>';
+  }
+  console.log(el.innerHTML + 'loook')
+  return el.innerHTML = output;
+}
+// document.getElementsByTagName('h1')[0].setAttribute(
+//   "style",
+//   "color:red; display:flex; justify-content:center;");
+
+alternateColors()
+console.log(alternateColors())
 
 // NOTES: by starting with ms we can redefine our diff var 
 // (that is in ms from smallest to largest) making use of the % operator to show
