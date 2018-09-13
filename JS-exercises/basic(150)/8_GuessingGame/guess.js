@@ -11,9 +11,9 @@ console.log(randomNumber);
 
 function checkGuess() {
   if((randomNumber()) === parseInt(guessField.value)) {
-    return document.getElementById('message').innerHTML = 'No fucking way, you got it!'
+    return document.getElementById('message').innerHTML = 'No way, you got it!'
   } else {
-    return document.getElementById('message').innerHTML = '<em>guess again loser</em>'
+    return document.getElementById('message').innerHTML = '<em>Guess again punk</em>'
   }
 }
 console.log(checkGuess());
