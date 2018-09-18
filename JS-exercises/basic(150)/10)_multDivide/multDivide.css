@@ -1,6 +1,9 @@
-.stack {
+body {
+  margin: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 label {
@@ -13,6 +16,17 @@ button {
   margin: 5px;
 }
 
+p {
+  margin: 5px;
+  display: inline;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .buttonWrap {
   display: flex;
   flex-direction: row;
@@ -21,11 +35,6 @@ button {
 .main {
   border: 1px solid black;
   max-width: 300px;
-}
-
-p {
-  margin: 5px;
-  display: inline;
 }
 
 #result {
