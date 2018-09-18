@@ -21,6 +21,10 @@ p {
   display: inline;
 }
 
+h1 {
+  animation: pulse 5s infinite;
+}
+
 .stack {
   display: flex;
   flex-direction: column;
@@ -39,4 +43,14 @@ p {
 
 #result {
   margin: 5px;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    color: #001F3F;
+  }
+  50% {
+    color: #FF4136;
+  }
 }
