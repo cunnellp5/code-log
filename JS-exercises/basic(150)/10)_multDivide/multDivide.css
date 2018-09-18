@@ -1,0 +1,33 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px;
+}
+
+button {
+  height: 20px;
+  width: 80px;
+  margin: 5px;
+}
+
+.buttonWrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  border: 1px solid black;
+  max-width: 300px;
+}
+
+p {
+  margin: 5px;
+  display: inline;
+}
+
+#result {
+  margin: 5px;
+}
