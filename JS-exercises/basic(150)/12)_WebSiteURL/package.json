@@ -1,0 +1,17 @@
+{
+  "name": "websiteurl",
+  "version": "1.0.0",
+  "description": "fuckyeah!nodeforlife!",
+  "main": "index.js",
+  "scripts": {
+    "test": "poop"
+  },
+  "keywords": [
+    "hooray"
+  ],
+  "author": "buttholes",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
