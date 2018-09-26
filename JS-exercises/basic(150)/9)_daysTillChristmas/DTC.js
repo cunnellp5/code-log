@@ -7,7 +7,19 @@ document.getElementsByTagName('html')[0].setAttribute(
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color:#6b92b9;
   `)
+document.getElementsByTagName('body')[0].setAttribute(
+  'style', 
+    `background:radial-gradient(white, #6b92b9 40%);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    flex-direction: column;
+    `)
 
 function calcDaysTillXMas() {
   setInterval(() => {
@@ -49,6 +61,4 @@ alternateColors(document.getElementsByTagName('h1')[0])
 calcDaysTillXMas();
 
 
-// NOTES: by starting with ms we can redefine our diff var 
-// (that is in ms from smallest to largest) making use of the % operator to show
-// the right unit of time.
+// https://codepen.io/MariamMassadeh/pen/AbBCt to add snow flakes
