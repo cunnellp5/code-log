@@ -4,3 +4,10 @@ html {
   justify-content: center;
   align-items: center;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 5px 0;
+}
