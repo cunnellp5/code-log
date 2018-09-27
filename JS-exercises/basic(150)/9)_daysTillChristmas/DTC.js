@@ -62,3 +62,4 @@ calcDaysTillXMas();
 
 
 // https://codepen.io/MariamMassadeh/pen/AbBCt to add snow flakes
+// https://codepen.io/shubniggurath/pen/WgJZJo upgraded
