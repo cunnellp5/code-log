@@ -21,6 +21,7 @@ var clear = document.createElement('button');
 var result = document.createElement('p')
     result.innerText = 'Result:'
 
+
 var parent = document.getElementsByTagName('body')[0];
     parent.append(inputOne, inputTwo, button, clear, result)
 
@@ -28,12 +29,23 @@ var parent = document.getElementsByTagName('body')[0];
 
 
 function erase() {
-  inputOne.value = '';
-  inputTwo.value = '';
-  result.innerText = 'Result:'
+  result.animate([
+    { opacity: '1' }, 
+    { opacity: '0' }
+  ], { 
+    // timing options
+    duration: 1000
+  });
+  setTimeout(() => {
+    inputOne.value = '';
+    inputTwo.value = '';
+    result.innerText = 'Result:'
+  }, 1000)
+
 }
 
 function addTwoTriple() {
+
   let val1 = parseInt(inputOne.value);
   let val2 = parseInt(inputTwo.value);
   let answer = (val1 === val2) ? (3 * (val1 + val2)) : (val1 + val2);
