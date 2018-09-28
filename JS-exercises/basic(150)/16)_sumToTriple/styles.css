@@ -3,8 +3,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
 body {
   background: url(
@@ -13,9 +11,6 @@ body {
   background-repeat:no-repeat;
   background-position:center center;
   background-size: 100% 100%, auto;
-
-  
-
   display: flex;
   flex-direction: column;
 }
