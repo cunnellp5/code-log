@@ -19,7 +19,8 @@ console.log(posAndNeg('poop', 3)) // false
 
 var javaScriptDivPre = document.createElement('pre')
 javaScriptDivPre.innerHTML = 
-`<code>
+`<a name="20"></a>
+<code>
 function posAndNeg(first, second) {
   if (typeof(first || second) !== 'number') return false
   let check1 = first >= 0;

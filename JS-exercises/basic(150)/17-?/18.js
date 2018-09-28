@@ -15,7 +15,8 @@ console.log(fiftyChecker(320, 540)) // false
 
 var javaScriptDivPre = document.createElement('pre')
 javaScriptDivPre.innerHTML = 
-`<code>
+`<a name="18"></a>
+<code>
 function fiftyChecker(first, second) {
   return (first === 50 || second === 50 || first + second === 50) ? true : false;
 }

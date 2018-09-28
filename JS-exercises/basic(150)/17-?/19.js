@@ -17,7 +17,8 @@ console.log(checkGivenInt(320)) // false
 
 var javaScriptDivPre = document.createElement('pre')
 javaScriptDivPre.innerHTML = 
-`<code>
+`<a name="19"></a>
+<code>
 function checkGivenInt(integer) {
   let check1 = Math.abs(100 - integer) <= 20;
   let check2 = Math.abs(400 - integer) <= 20;

@@ -13,7 +13,8 @@ console.log(absoDiff(33)) // 42
 
 var seventeenPre = document.createElement('pre')
 seventeenPre.innerHTML = 
-`<code>
+`<a name="17"></a>
+<code>
 function absoDiff(number) {
   return (number > 19) ? (3 * (number - 19)) : (19 - number);
 }
