@@ -23,3 +23,19 @@ h1, h6, h5 {
   display: flex;
   justify-content: center;
 }
+
+#sideNav {
+  position: fixed;
+
+  left: 25px;
+  display: flex;
+  flex-direction: row;
+}
+#title {
+  transform: rotate(-90deg);
+  margin: auto;
+}
+#wrap {
+  display: flex;
+  flex-direction: column;
+}
