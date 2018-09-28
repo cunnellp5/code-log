@@ -12,8 +12,14 @@ pre {
   padding-left: 3.6em;
   background-color: #f6f8fa;
   border-left: 0.4em solid #dfe2e5;
+  padding-right: .5em;
 }
 
 hr {
   margin: 10% 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
 }
