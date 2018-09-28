@@ -38,9 +38,9 @@ console.log(posAndNeg('poop', 3)) // false
   </code>`;
 
 javaScriptDiv.appendChild(javaScriptDivPre);
-var hr19post = document.createElement('hr');
+var hr = document.createElement('hr');
 
 
 var body = document.getElementsByTagName('body')[0];
-body.append(javaScriptDiv, hr19post);
+body.append(javaScriptDiv, hr);
 

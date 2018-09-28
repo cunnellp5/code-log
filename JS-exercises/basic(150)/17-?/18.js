@@ -28,9 +28,9 @@ console.log(fiftyChecker(20, 50)) // true
 console.log(fiftyChecker(320, 540)) // false
   </code>`;
 javaScriptDiv.appendChild(javaScriptDivPre);
-var hr18post = document.createElement('hr');
+var hr = document.createElement('hr');
 
 
 var body = document.getElementsByTagName('body')[0];
-body.append(javaScriptDiv, hr18post);
+body.append(javaScriptDiv, hr);
 
