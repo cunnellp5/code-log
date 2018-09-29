@@ -15,7 +15,9 @@
     <a href="#21">21</a>
     <a href="#22">22</a>
     <a href="#23">23</a>
-    <a href="#24">24</a>`
+    <a href="#24">24</a>
+    <a href="#25">25</a>
+    `
 
   main.append(divtitle, divwrap)
   var body = document.getElementsByTagName('body')[0]

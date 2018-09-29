@@ -20,6 +20,8 @@
     twentythree.src = '23.js';
     var twentyfour = document.createElement('script');
     twentyfour.src = '24.js';
+    var twentyfive = document.createElement('script');
+    twentyfive.src = '25.js';
 
     document.head.append(
       header,
@@ -31,7 +33,8 @@
       twentyone,
       twentytwo,
       twentythree,
-      twentyfour
+      twentyfour,
+      twentyfive
     );
   });
 
