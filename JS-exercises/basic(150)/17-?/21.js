@@ -18,7 +18,6 @@ console.log(appendStringPy('oneMoreString')) // PyoneMoreString
 var javaScriptDivPre = document.createElement('pre')
 javaScriptDivPre.innerHTML =
 `
-<a name="21"></a>
 <code>
 function appendStringPy(string) {
   return string.substring(0, 2).toLowerCase() === 'py' ? string : 'Py' + string;

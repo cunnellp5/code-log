@@ -5,8 +5,19 @@ html {
 }
 
 body {
-  margin: 5% 25%;
+  margin: 0 25%;
+  height: 100%;
 }
+
+/* footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+} */
 
 pre {
   padding-left: 3.6em;
@@ -66,5 +77,4 @@ h1, h6, h5 {
   a {
     margin: 0 2px;
   }
-  /*Class name*/{/*properties*/}
 }
