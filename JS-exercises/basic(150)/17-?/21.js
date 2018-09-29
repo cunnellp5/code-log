@@ -1,4 +1,6 @@
 // 21. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.
+var a = document.createElement('a')
+a.setAttribute("name", "21");
 var javaScriptDiv = document.createElement('div');
     // javaScriptDiv.setAttribute("id", "21");
 javaScriptDiv.innerText = '21. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.'
@@ -14,7 +16,7 @@ console.log(appendStringPy('PYthon')) // PYthon
 console.log(appendStringPy('oneMoreString')) // PyoneMoreString
 
 var javaScriptDivPre = document.createElement('pre')
-javaScriptDivPre.innerHTML = 
+javaScriptDivPre.innerHTML =
 `
 <a name="21"></a>
 <code>
@@ -36,5 +38,4 @@ var hr = document.createElement('hr');
 
 
 var body = document.getElementsByTagName('body')[0];
-body.append(javaScriptDiv, hr);
-
+body.append(a, hr, javaScriptDiv);

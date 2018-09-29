@@ -1,4 +1,6 @@
 // 20. Write a JavaScript program to check from two given integers, if one is positive and one is negative
+var a = document.createElement('a')
+a.setAttribute("name", "20");
 var javaScriptDiv = document.createElement('div');
 javaScriptDiv.innerText = '20. Write a JavaScript program to check from two given integers, if one is positive and one is negative'
 
@@ -18,9 +20,8 @@ console.log(posAndNeg(undefined, null)) // false
 console.log(posAndNeg('poop', 3)) // false
 
 var javaScriptDivPre = document.createElement('pre')
-javaScriptDivPre.innerHTML = 
-`<a name="20"></a>
-<code>
+javaScriptDivPre.innerHTML =
+`<code>
 function posAndNeg(first, second) {
   if (typeof(first || second) !== 'number') return false
   let check1 = first >= 0;
@@ -43,5 +44,4 @@ var hr = document.createElement('hr');
 
 
 var body = document.getElementsByTagName('body')[0];
-body.append(javaScriptDiv, hr);
-
+body.append(a, hr, javaScriptDiv);

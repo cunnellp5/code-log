@@ -1,4 +1,6 @@
 // 19. Write a JavaScript program to check a given integer is within 20 of 100 or 400. var javaScriptDiv = document.createElement('div');
+var a = document.createElement('a')
+a.setAttribute("name", "19");
 var javaScriptDiv = document.createElement('div');
 javaScriptDiv.innerText = '19. Write a JavaScript program to check a given integer is within 20 of 100 or 400.'
 
@@ -16,9 +18,8 @@ console.log(checkGivenInt(120)) // true
 console.log(checkGivenInt(320)) // false
 
 var javaScriptDivPre = document.createElement('pre')
-javaScriptDivPre.innerHTML = 
-`<a name="19"></a>
-<code>
+javaScriptDivPre.innerHTML =
+`<code>
 function checkGivenInt(integer) {
   let check1 = Math.abs(100 - integer) <= 20;
   let check2 = Math.abs(400 - integer) <= 20;
@@ -38,5 +39,4 @@ var hr = document.createElement('hr');
 
 
 var body = document.getElementsByTagName('body')[0];
-body.append(javaScriptDiv, hr);
-
+body.append(a, hr, javaScriptDiv);
