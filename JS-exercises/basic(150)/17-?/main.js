@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   twentytwo.src = '22.js';
   var twentythree = document.createElement('script');
   twentythree.src = '23.js';
+  var twentyfour = document.createElement('script');
+  twentyfour.src = '24.js';
 
   document.head.append(
     header,
@@ -28,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     twenty,
     twentyone,
     twentytwo,
-    twentythree
+    twentythree,
+    twentyfour
   );
 
 
