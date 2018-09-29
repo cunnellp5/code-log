@@ -1,4 +1,4 @@
-(function () {
+exports.sidenav = (function () {
   let main = document.createElement('main');
   let divtitle = document.createElement('div');
   let divwrap = document.createElement('div');

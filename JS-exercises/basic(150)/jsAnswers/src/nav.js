@@ -1,4 +1,4 @@
-(function () {
+exports.nav = (function () {
   document.addEventListener("DOMContentLoaded", function(event) {
     var header = document.createElement('script');
     header.src = 'header.js';
@@ -36,6 +36,17 @@
       twentyfour,
       twentyfive
     );
-  });
 
+    // function reOrder(ray) {
+    //   ray.reverse();
+    //   console.log(ray[0].src)
+    //   // let result = [];
+    //   // for (var i = 0; i < ray.length; i++) {
+    //   //   ray[i]
+    //   // }
+    //   return ray;
+    // }
+    // reOrder(fullArrayOfScripts)
+
+  });
 }());
