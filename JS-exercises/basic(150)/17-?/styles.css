@@ -37,7 +37,7 @@ h1, h6, h5 {
 
 #sideNav {
   position: fixed;
-
+  top: 15%;
   left: 25px;
   display: flex;
   flex-direction: row;
