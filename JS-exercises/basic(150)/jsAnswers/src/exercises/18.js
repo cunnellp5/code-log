@@ -1,5 +1,5 @@
-var helpers = require('./helpers');
-const util = helpers.helpers;
+var domUtils = require('../helper-functions/domUtils');
+const util = domUtils.domUtils;
 
 exports.eighteen = (function () {
   const question = `18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.`;

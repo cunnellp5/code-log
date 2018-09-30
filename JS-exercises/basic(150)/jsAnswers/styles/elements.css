@@ -2,6 +2,7 @@ html {
   height: 100vh;
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0 25%;
@@ -19,4 +20,22 @@ hr {
 h1, h6, h5 {
   display: flex;
   justify-content: center;
+}
+hr:first-of-type {
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:first-of-type:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }

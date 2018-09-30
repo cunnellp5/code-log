@@ -1,17 +1,17 @@
 import _ from 'lodash';
 
-var nav = require('./nav');
-var header = require('./header');
-var sidenav = require('./sidenav');
-var seventeen = require('./17');
-var eighteen = require('./18');
-var ninteen = require('./19');
-var twenty = require('./20');
-var twentyone = require('./21');
-var twentytwo = require('./22');
-var twentythree = require('./23');
-var twentyfour = require('./24');
-var twentyfive = require('./25');
+var header = require('./domscripts/header');
+var sidenav = require('./domscripts/sidenav');
+
+var seventeen = require('./exercises/17');
+var eighteen = require('./exercises/18');
+var ninteen = require('./exercises/19');
+var twenty = require('./exercises/20');
+var twentyone = require('./exercises/21');
+var twentytwo = require('./exercises/22');
+var twentythree = require('./exercises/23');
+var twentyfour = require('./exercises/24');
+var twentyfive = require('./exercises/25');
 
 function component() {
   let element = document.createElement('div');

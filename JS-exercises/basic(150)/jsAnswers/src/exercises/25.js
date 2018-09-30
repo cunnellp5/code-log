@@ -1,5 +1,5 @@
-var helpers = require('./helpers');
-const util = helpers.helpers;
+var domUtils = require('../helper-functions/domUtils');
+const util = domUtils.domUtils;
 
 exports.twentythree = (function () {
   const question = `25. Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7.`;

@@ -1,5 +1,5 @@
-var helpers = require('./helpers');
-const util = helpers.helpers;
+var domUtils = require('../helper-functions/domUtils');
+const util = domUtils.domUtils;
 
 exports.twentyfour = (function () {
 

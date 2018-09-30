@@ -1,5 +1,5 @@
-var helpers = require('./helpers');
-const util = helpers.helpers;
+var domUtils = require('../helper-functions/domUtils');
+const util = domUtils.domUtils;
 
 exports.twentyone = (function () {
   const question = `21. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.`;

@@ -1,5 +1,5 @@
-var helpers = require('./helpers');
-const util = helpers.helpers;
+var domUtils = require('../helper-functions/domUtils');
+const util = domUtils.domUtils;
 
 exports.ninteen = (function () {
   const question = `19. Write a JavaScript program to check a given integer is within 20 of 100 or 400.`;

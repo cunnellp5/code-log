@@ -1,5 +1,5 @@
-var helpers = require('./helpers');
-const util = helpers.helpers;
+var domUtils = require('../helper-functions/domUtils');
+const util = domUtils.domUtils;
 
 exports.twentytwo = (function () {
   const question = `22. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.`;

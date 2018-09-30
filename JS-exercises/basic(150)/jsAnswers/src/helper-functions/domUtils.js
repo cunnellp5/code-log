@@ -1,4 +1,4 @@
-exports.helpers = {
+exports.domUtils = {
   createAndSetAnchor(name) {
     var a = document.createElement('a')
     a.setAttribute("name", name);
