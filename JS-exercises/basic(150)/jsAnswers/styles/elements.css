@@ -3,33 +3,19 @@ html {
   display: flex;
   justify-content: center;
 }
-
 body {
   margin: 0 25%;
   height: 100%;
 }
-
-/* footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-} */
-
 pre {
   padding-left: 3.6em;
   background-color: #f6f8fa;
   border-left: 0.4em solid #dfe2e5;
   padding-right: .5em;
 }
-
 hr {
   margin: 10% 0;
 }
-
 h1, h6, h5 {
   display: flex;
   justify-content: center;
