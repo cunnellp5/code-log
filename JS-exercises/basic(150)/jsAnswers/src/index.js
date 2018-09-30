@@ -12,6 +12,7 @@ var twentytwo = require('./exercises/22');
 var twentythree = require('./exercises/23');
 var twentyfour = require('./exercises/24');
 var twentyfive = require('./exercises/25');
+var twentysix = require('./exercises/26');
 
 function component() {
   let element = document.createElement('div');

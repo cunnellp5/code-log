@@ -2,6 +2,7 @@ exports.domUtils = {
   createAndSetAnchor(name) {
     var a = document.createElement('a')
     a.setAttribute("name", name);
+    a.setAttribute('href', '#' + name);
     return a;
   },
   createAndSetHR() {

@@ -1,7 +1,7 @@
 var domUtils = require('../helper-functions/domUtils');
 const util = domUtils.domUtils;
 
-exports.twentythree = (function () {
+exports.twentyfive= (function () {
   const question = `25. Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7.`;
   const blockocode =`<code>
   function multOfThreeOrSeven(number) {
