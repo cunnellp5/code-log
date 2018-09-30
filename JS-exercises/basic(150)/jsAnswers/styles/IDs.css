@@ -1,0 +1,15 @@
+#sideNav {
+  position: fixed;
+  top: 15%;
+  left: 25px;
+  display: flex;
+  flex-direction: row;
+}
+#title {
+  transform: rotate(-90deg);
+  margin: auto;
+}
+#wrap {
+  display: flex;
+  flex-direction: column;
+}
