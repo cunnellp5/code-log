@@ -1,23 +1,19 @@
 import _ from 'lodash';
+import {masterArray} from './exercises/main';
 
-var header = require('./domscripts/header');
-var sidenav = require('./domscripts/sidenav');
+require('./domscripts/header');
+require('./domscripts/sidenav');
+require('./exercises/main');
 
-var seventeen = require('./exercises/17');
-var eighteen = require('./exercises/18');
-var ninteen = require('./exercises/19');
-var twenty = require('./exercises/20');
-var twentyone = require('./exercises/21');
-var twentytwo = require('./exercises/22');
-var twentythree = require('./exercises/23');
-var twentyfour = require('./exercises/24');
-var twentyfive = require('./exercises/25');
-var twentysix = require('./exercises/26');
+var domUtils = require('./helper-functions/domUtils');
+const util = domUtils.domUtils;
 
-function component() {
-  let element = document.createElement('div');
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  return element;
+
+
+function createPage(ray) {
+  return ray.map((el) => {
+    return util.masterCreator(el.question.slice(0,2), el.question, el.blockcode);
+  })
 }
 
-document.body.appendChild(component());
+createPage(masterArray)
