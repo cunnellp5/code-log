@@ -2,11 +2,9 @@ import _ from 'lodash';
 import { masterArray } from './exercises/main';
 import './styles/styles.css';
 
+var domUtils = require('./helper-functions/domUtils').domUtils;
 require('./domscripts/header');
 require('./domscripts/sidenav');
-require('./exercises/main');
-
-var domUtils = require('./helper-functions/domUtils').domUtils;
 
 function createPage(ray) {
   return ray.map((el) => {
