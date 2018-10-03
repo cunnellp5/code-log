@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import { masterArray } from './exercises/main';
+import './styles/styles.css';
 
 require('./domscripts/header');
 require('./domscripts/sidenav');
