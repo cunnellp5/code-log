@@ -24,5 +24,6 @@ $ lite-server OR $ http-server (how ever you want to spin up html files in the b
 ```
 
 To add more pages:
-- Create a new .js file under `./src/exercises` and copy and paste the template
-  - Within that file
+- Create a new .js file under `./src/exercises` and copy and paste the template. Fill in the blanks
+- Then register the file in the main.js
+  - If webpack is watching just refresh the page
