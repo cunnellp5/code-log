@@ -6,7 +6,7 @@ html {
 }
 body {
   margin: 0 25%;
-  height: 100%;
+  height: fit-content;
 }
 pre {
   padding-left: 3.6em;
