@@ -3,6 +3,7 @@ html {
   display: flex;
   justify-content: center;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 body {
   margin: 0 25%;
@@ -38,4 +39,10 @@ hr:first-of-type:before {
     border-color: black;
     border-width: 0 0 1px 0;
     border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,32 +1,54 @@
 import _ from 'lodash';
-import { masterArray } from './exercises/main';
 import './styles/styles.css';
 
-var domUtils = require('./helper-functions/domUtils').domUtils;
 require('./domscripts/header');
-require('./domscripts/sidenav');
-
-function createPage(ray) {
-  return ray.map((el) => {
-    return domUtils.masterCreator(el.question.slice(0,2), el.question, el.blockcode);
-  })
-}
 
 function component() {
+  var jsbasics = document.createElement('div');
   var element = document.createElement('div');
   var btn = document.createElement('button');
+  var toggler = document.createElement('button');
   var br = document.createElement('br');
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  btn.innerHTML = 'Click me and check the console!';
-  element.appendChild(br);
-  element.appendChild(btn);
+  var nav = document.createElement('nav');
+  
+  nav.innerHTML = _.join(['Home', 'page'], ' ');
+  btn.innerHTML = 'Render JSBasics';
+  toggler.innerHTML = 'toggle JSBasics';
+  jsbasics.setAttribute('id', 'jsbasics');
+  element.setAttribute('id', 'wrapper');
+  jsbasics.style.display = 'block';
 
-  btn.onclick = e => import(/* webpackChunkName: "print" */ './print').then(module => {
-    var print = module.default;
-    print();
-  });
+  element.appendChild(nav)
+  nav.appendChild(br);
+  nav.appendChild(btn);
+  nav.appendChild(toggler);
+  element.appendChild(jsbasics)
+
+
+  lazyJsBasic(btn)
+  toggleButton(toggler)
+
   return element;
 }
 
+function lazyJsBasic(btn) {
+  btn.onclick = e => import(/* webpackChunkName: "JSBasics" */ './JSBasics').then(module => {
+    var JSBasics = module.default;
+    JSBasics();
+    require('./domscripts/sidenav');
+  });
+}
+
+function toggleButton(toggler) {
+  toggler.onclick = e => {
+    var basic = document.getElementById('jsbasics');
+    if(basic.style.display === 'none') {
+      basic.style.display = 'block';
+    } else {
+      basic.style.display = 'none'
+    }
+  }
+}
+
 document.body.appendChild(component());
-createPage(masterArray)
+

@@ -19,8 +19,8 @@ exports.sidenav = (function () {
     divwrap.innerHTML = dynamicATags;
 
     main.append(divtitle, divwrap)
-    var body = document.getElementsByTagName('body')[0]
-    body.append(main);
+    var basic = document.getElementById('jsbasics')
+    basic.append(main);
   })
 
 }());

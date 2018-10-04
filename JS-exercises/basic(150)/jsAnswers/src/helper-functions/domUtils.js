@@ -20,8 +20,8 @@ exports.domUtils = {
   },
   generateHTML(div, codeToText, a, hr){
     div.appendChild(codeToText);
-    var body = document.getElementsByTagName('body')[0];
-    return body.append(a, hr, div);
+    var id = document.getElementById('jsbasics');
+    return id.append(a, hr, div);
   },
   masterCreator(string, question, blockocode) {
     var a = this.createAndSetAnchor(string);
