@@ -6,6 +6,7 @@ require('./domscripts/header');
 function component() {
   var jsbasics = document.createElement('div');
   var element = document.createElement('div');
+  var buttonWrap = document.createElement('div');
   var btn = document.createElement('button');
   var toggler = document.createElement('button');
   var br = document.createElement('br');
@@ -16,12 +17,15 @@ function component() {
   toggler.innerHTML = 'toggle JSBasics';
   jsbasics.setAttribute('id', 'jsbasics');
   element.setAttribute('id', 'wrapper');
+  buttonWrap.setAttribute('id', 'button-wrap');
   jsbasics.style.display = 'block';
 
+  buttonWrap.appendChild(btn)
+  buttonWrap.appendChild(toggler)
   element.appendChild(nav)
   nav.appendChild(br);
-  nav.appendChild(btn);
-  nav.appendChild(toggler);
+  nav.appendChild(buttonWrap);
+  // nav.appendChild(toggler);
   element.appendChild(jsbasics)
 
 
