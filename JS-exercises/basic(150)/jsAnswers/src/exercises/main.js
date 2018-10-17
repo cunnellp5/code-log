@@ -14,6 +14,7 @@ import * as twentyeight from './28';
 import * as twentynine from './29';
 import * as thirty from './30';
 import * as thirtyone from './31';
+import * as thirtytwo from './32';
 
 const masterArray = [
   seventeen,
@@ -30,7 +31,8 @@ const masterArray = [
   twentyeight,
   twentynine,
   thirty,
-  thirtyone
+  thirtyone,
+  thirtytwo
 ]
 
 export { masterArray };
