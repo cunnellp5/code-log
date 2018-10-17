@@ -29,7 +29,7 @@ console.log(rangerWillRobinson(40, 111)); // false
 
     </code>`;
 
-function rangerWillRobinson(...numbers) {
+function rangerWillRobinson1(...numbers) {
   ray = [];
   numbers.forEach((el) => {
     if((el >= 40 && el <= 60) || (el <= 100 && el >= 70)) {
