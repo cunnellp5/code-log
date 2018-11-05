@@ -9,4 +9,6 @@ const blockcode =`<code>
 function template(arguments) {
   // CODE HERE
 }
+
+export { question, blockcode }
 ```
