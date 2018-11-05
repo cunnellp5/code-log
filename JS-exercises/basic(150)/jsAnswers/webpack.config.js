@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Output Management 👻'
+      title: 'JS Exercises 👻'
     })
   ],
   output: {
