@@ -1,7 +1,8 @@
 // This file is just all the info from the above files mashed into one
-import * as seventeen from './17';
-import * as eighteen from './18';
-import * as ninteen from './19';
+// import * as seventeen from './teens/17';
+// import * as eighteen from './teens/18';
+// import * as ninteen from './teens/19';
+import * as teens from './teens/index';
 import * as twenty from './20';
 import * as twentyone from './21';
 import * as twentytwo from './22';
@@ -25,11 +26,13 @@ import * as thirtynine from './39';
 import * as forty from './40';
 import * as fortyone from './41';
 import * as fortytwo from './42';
+// import * as fortythree from './43';
+
 
 const masterArray = [
-  seventeen,
-  eighteen,
-  ninteen,
+  // seventeen,
+  // eighteen,
+  // ninteen,
   twenty,
   twentyone,
   twentytwo,
@@ -52,7 +55,14 @@ const masterArray = [
   thirtynine,
   forty,
   fortyone,
-  fortytwo
+  fortytwo,
+  // fortythree
 ]
+
+const teenagers = teens.teens.forEach((el) => {
+  masterArray.push({ blockcode: el.blockcode, question: el.question })
+})
+console.log(teenagers)
+
 
 export { masterArray };

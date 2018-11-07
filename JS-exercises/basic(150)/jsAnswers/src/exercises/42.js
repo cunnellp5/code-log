@@ -11,7 +11,6 @@ function number_order(x, y, z) {
 console.log(number_order(10,15,31));
 console.log(number_order(24,22,31));
 console.log(number_order(50,21,15));
-
     </code>`;
 
 function number_order(x, y, z) {
@@ -21,6 +20,5 @@ function number_order(x, y, z) {
     return 'Soft mode'
   }
 }
-
 
 export { question, blockcode }

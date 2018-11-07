@@ -22,10 +22,4 @@ function betwixt4060(...numbers) {
   });
 }
 
-console.log(betwixt4060(33, 40)) // false
-console.log(betwixt4060(3, 40)) // false
-console.log(betwixt4060(40, 60)) // 60
-console.log(betwixt4060(60, 40)) // 60
-
-
 export { question, blockcode }
