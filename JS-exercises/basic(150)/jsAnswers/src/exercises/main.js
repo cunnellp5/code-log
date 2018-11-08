@@ -27,6 +27,8 @@ import * as forty from './40';
 import * as fortyone from './41';
 import * as fortytwo from './42';
 import * as fortythree from './43';
+import * as fortyfour from './44';
+import * as fortyfour from './45';
 
 
 const masterArray = [
@@ -56,7 +58,9 @@ const masterArray = [
   forty,
   fortyone,
   fortytwo,
-  fortythree
+  fortythree,
+  fortyfour,
+  fortyfive
 ]
 
 // const teenagers = teens.teens.forEach((el) => {
