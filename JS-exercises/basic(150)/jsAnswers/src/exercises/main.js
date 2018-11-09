@@ -23,16 +23,16 @@ import * as thirtysix from './thirties/36';
 import * as thirtyseven from './thirties/37';
 import * as thirtyeight from './thirties/38';
 import * as thirtynine from './thirties/39';
-import * as forty from './40';
-import * as fortyone from './41';
-import * as fortytwo from './42';
-import * as fortythree from './43';
-import * as fortyfour from './44';
-import * as fortyfive from './45';
-import * as fortysix from './46';
-import * as fortyseven from './47';
-import * as fortyeight from './48';
-import * as fortynine from './49';
+import * as forty from './forties/40';
+import * as fortyone from './forties/41';
+import * as fortytwo from './forties/42';
+import * as fortythree from './forties/43';
+import * as fortyfour from './forties/44';
+import * as fortyfive from './forties/45';
+import * as fortysix from './forties/46';
+import * as fortyseven from './forties/47';
+import * as fortyeight from './forties/48';
+import * as fortynine from './forties/49';
 
 const masterArray = [
   seventeen,
