@@ -5,13 +5,15 @@ import * as twenties from './twenties/index';
 import * as thirties from './thirties/index';
 import * as forties from './forties/index';
 import * as fifties from './fifties/index';
+import * as sixties from './sixties/index';
 
 const loopMe = [
   teens,
   twenties,
   thirties,
   forties,
-  fifties
+  fifties,
+  sixties
 ]
 const masterArray = []
 
