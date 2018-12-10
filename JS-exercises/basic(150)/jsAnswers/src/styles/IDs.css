@@ -4,6 +4,7 @@
   left: 25px;
   display: flex;
   flex-direction: row;
+  height: 80vh;
 }
 #title {
   transform: rotate(-90deg);
@@ -12,4 +13,5 @@
 #wrap {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }

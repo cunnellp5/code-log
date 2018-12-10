@@ -76,3 +76,8 @@ button:hover::before {
 button:focus { 
   outline: none; 
 }
+
+a {
+  margin-bottom: 2px;
+  margin-left: 4px;
+}

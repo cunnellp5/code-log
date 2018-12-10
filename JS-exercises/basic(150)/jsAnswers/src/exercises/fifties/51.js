@@ -4,7 +4,7 @@ function time_convert(numb) {
   let unconverted = numb/60;
   let hour = Math.floor(unconverted);
   let min = Math.round((unconverted % 1) * 60);
-  return `${hour}:${min}`;
+  return '\${hour}:\${min}';
 }
 
 
