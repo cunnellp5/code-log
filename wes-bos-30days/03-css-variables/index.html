@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS variables altered with JS</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>CSS Variable <span>fun</span> 👻</h1>
+    </header>
+    <div class="controls">
+      <div class="stacker">
+        <label for="volume">Spacing:</label>
+        <input
+          type="range"
+          name="spacing"
+          min="0"
+          max="200"
+          value="10"
+          data-sizing="px">
+      </div>
+
+      <div class="stacker">
+        <label for="volume">Blur:</label>
+        <input
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="10"
+          data-sizing="px">
+      </div>
+
+      <div class="stacker">
+        <label for="volume">Color:</label>
+        <input
+          type="color"
+          name="base"
+          value="#ffc600">
+        </div>
+    </div>
+    <img src="https://placeimg.com/640/480/any?t=1544661630855" alt="">
+    <script src="./main.js" charset="utf-8"></script>
+  </body>
+
+
+</html>

@@ -1,0 +1,39 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+html {
+  height: 100vh;
+  background-color:#6b92b9;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  height: 480px;
+  width: 640px;
+  padding: var(--spacing) 0 0 var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.stacker > label {
+  font-size: 30px;
+}
+
+.controls {
+  margin: 5% 0;
+}
+
+span {
+  color: var(--base);
+}
+
+
+/* border-radius: 45% 55% 45% 55% / 46% 48% 52% 54% */
