@@ -6,7 +6,7 @@ function city_name(string) {
 
 console.log(city_name("New York")); // New York
 console.log(city_name("Los Angeles")); // Los Angles
-console.log(city_name("London")); //
+console.log(city_name("London")); // ''
     </code>`;
 
 function city_name(string) {

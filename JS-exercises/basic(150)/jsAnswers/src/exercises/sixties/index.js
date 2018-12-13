@@ -5,8 +5,8 @@ import * as sixtythree from './63';
 import * as sixtyfour from './64';
 import * as sixtyfive from './65';
 import * as sixtysix from './66';
-// import * as sixtyseven from './67';
-// import * as sixtyeight from './68';
+import * as sixtyseven from './67';
+import * as sixtyeight from './68';
 // import * as sixtynine from './69';
 const data = [
   sixty,
@@ -16,8 +16,8 @@ const data = [
   sixtyfour,
   sixtyfive,
   sixtysix,
-  // sixtyseven,
-  // sixtyeight,
+  sixtyseven,
+  sixtyeight,
   // sixtynine,
 ];
 export { data };
