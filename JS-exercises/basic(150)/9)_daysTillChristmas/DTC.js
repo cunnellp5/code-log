@@ -2,7 +2,7 @@ var div = document.createElement('div');
 div.setAttribute("style", "color: red; display:flex; justify-content:center;");
 
 document.getElementsByTagName('html')[0].setAttribute(
-  'style', 
+  'style',
     `display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@ document.getElementsByTagName('html')[0].setAttribute(
     background-color:#6b92b9;
   `)
 document.getElementsByTagName('body')[0].setAttribute(
-  'style', 
+  'style',
     `background:radial-gradient(white, #6b92b9 40%);
     border-radius: 50%;
     height: 500px;
@@ -42,7 +42,14 @@ function calcDaysTillXMas() {
     var hours = Math.abs(Math.floor(diff % 24));
     var days = Math.abs(Math.floor(diff / 24));
 
-    date = `🎄 ${days}:${hours}:${minutes}:${seconds} 🎄`;
+    var result;
+    if(new Date().getMonth() === 11 && new Date().getDate() >= 25) {
+      result = 'Next year sukka';
+    } else {
+      result = `${days}:${hours}:${minutes}:${seconds}`;
+    }
+
+    date = `🎄 ${result} 🎄`;
     div.innerHTML = date
     document.body.appendChild(div)
   },1000)
