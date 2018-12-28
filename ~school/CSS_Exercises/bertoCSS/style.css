@@ -1,0 +1,36 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+}
+
+header{
+ background-color: pink;
+
+}
+div {
+  background-color: black;
+  height: 10vh;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+
+}
+
+.left {
+  background-color: white;
+  height: 55vh;
+  width: 22vw;
+}
+
+.mid {
+  background-color: white;
+  height: 55vh;
+  width: 22vw;
+}
+
+.right {
+  background-color: white;
+  height: 55vh;
+  width: 22vw;
+}
