@@ -1,107 +1,26 @@
-# Resource for exercises
-- https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php
+[Resource for all exercises](https://www.w3resource.com/javascript-exercises/)
 
+list to tackle:
+```
+[] JavaScript Basic [ 150 Exercises with Solution ]
+[] JavaScript Fundamental (ES6 version) [ 150 Exercises with Solution ]
+[] JavaScript Fundamental (ES6 version) [ 116 Exercises with Solution ]
+[] JavaScript Functions [ 29 Exercises with Solution ]
+[] JavaScript Recursion [ 9 Exercises with Solution ]
+[] JavaScript Conditional Statements and loops [ 12 Exercises with Solution ]
+[] JavaScript Array [ 41 Exercises with Solution ]
+[] JavaScript Date [ 53 Exercises with Solution ]
+[] JavaScript String [ 49 Exercises with Solution ]
+[] JavaScript Math [ 53 Exercises with Solution ]
+[] JavaScript Validation with Regular expression [ 20 Exercises with Solution ]
+[] JavaScript HTML DOM [ 13 Exercises with Solution ]
+[] JavaScript Drawing [ 6 Exercises with Solution ]
+[] JavaScript Object [ 18 Exercises with Solution ]
+[] JavaScript Basic Validation without Regular expression [10 Exercises with Solution ]
+[] JavaScript Searching and Sorting Algorithm [14 Exercises with Solution ]
+```
 
-Rest of the questions (for travel):
-51. Write a JavaScript program to convert a given number to hours and minutes.
-console.log(time_convert(71)); // 1:11
-console.log(time_convert(450)); // 7:30
-console.log(time_convert(1441)); // 24:1
-
-52. Write a JavaScript program to convert the letters of a given string in alphabetical order.
-console.log(alphabet_Soup("Python")); // Phnoty
-console.log(alphabet_Soup("Exercises")); // Eceeirssx
-
-53. Write a JavaScript program to check if the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
-console.log(ab_Check("Chainsbreak")); // true
-console.log(ab_Check("pane borrowed")); // true
-console.log(ab_Check("abCheck")); // false
-
-54. Write a JavaScript program to count the number of vowels in a given string.
-console.log(vowel_Count("Python")); // 1
-console.log(vowel_Count("w3resource.com")); // 5
-
-55. Write a JavaScript program to check if a given string contains equal number of p's and t's present.
-console.log(equal_pt("paatpss")); // false
-console.log(equal_pt("paatps")); // false
-
-56. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.
-console.log(result_array(80,6)); // ['1','3'] ???
-
-57. Write a JavaScript program to create a new string of specified copies (positive number) of a given string.
-console.log(string_copies("abc", 5)); // abcabcabcabcabc
-console.log(string_copies("abc", 0)); // (nothing here)
-console.log(string_copies("abc", -2)); // false
-
-58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. The length of the given string must be 3 and above.
-console.log(newstring("Python 3.0")); // 3.03.03.03.0
-console.log(newstring("JS")); // false
-console.log(newstring("JavaScript")); // iptiptiptipt
-
-59. Write a JavaScript program to extract the first half of a string of even length.
-console.log(first_half("Python")); // Pyt
-console.log(first_half("JavaScript")); // JavaS
-console.log(first_half("PHP")); // PHP
-
-60. Write a JavaScript program to create a new string without the first and last character of a given string.
-console.log(without_first_end('JavaScript')); // avaScrip
-console.log(without_first_end('JS')); //
-console.log(without_first_end('PHP')); // H
-
-61. Write a JavaScript program to concatenate two strings except their first character.
-console.log(concatenate("PHP","JS")); // HPS
-console.log(concatenate("A","B")); //
-console.log(concatenate("AA","BB")); // AB
-
-62. Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three.
-console.log(right_three("Python")); // honPyt
-console.log(right_three("JavaScript")); // iptJavaScr
-console.log(right_three("Hi")); // Hi
-
-63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater or equal to three.
-console.log(middle_three('abcdefg')); // cde
-console.log(middle_three('HTML5')); // TML
-console.log(middle_three('Python')); // Python
-console.log(middle_three('PHP')); // PHP
-console.log(middle_three('Exercises')); // rci
-
-64. Write a JavaScript program to concatenate two strings and return the result. If the length of the strings are not same then remove the characters from the longer string.
-console.log(str_con_cat("Python", "JS")); // onJS
-console.log(str_con_cat("ab", "cdef")); // abef
-
-65. Write a JavaScript program to test if a string end with "Script". The string length must be greater or equal to 6.
-console.log(end_script("JavaScript")); // true
-console.log(end_script("Java Script")); // true
-console.log(end_script("Java Scripts")); // false
-
-66. Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
-console.log(city_name("New York")); // New York
-console.log(city_name("Los Angeles")); // Los Angles
-console.log(city_name("London")); //
-
-67. Write a JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.
-console.log(nop("PythonP")); // ython
-console.log(nop("Python")); // ython
-console.log(nop("JavaScript")); // JavaScript
-
-68. Write a JavaScript program to create a new string using the first and last n characters from a given sting. The string length must be greater or equal to n.
-console.log(two_string("JavaScript", 2)); // Japt
-console.log(two_string("JavaScript", 3)); // Javipt
-
-69. Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
-console.log(sum_three([10, 32, 20])); // 62
-console.log(sum_three([5, 7, 9])); // 21
-console.log(sum_three([0, 8, -11])); // -3
-
-70. Write a JavaScript program to rotate the elements left of a given array of integers of length 3.
-console.log(rotate_elements_left([3, 4, 5])); // [4,5,3]
-console.log(rotate_elements_left([0, -1, 2])); // [-1,2,0]
-console.log(rotate_elements_left([7, 6, 5])); // [6,5,7]
-
-71. Write a JavaScript program to check if 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1.
-console.log(first_last_1([1, 3, 5])); // true
-console.log(first_last_1([1, 3, 5, 1])); // true
-console.log(first_last_1([2, 4, 6])); // false
+questions and example results hardcoded for traveling purposes:
 
 72. Write a JavaScript program to check if the first and last elements are equal of a given array of integers length 3.
 console.log(first_last_same([10, 20, 30])); // false
