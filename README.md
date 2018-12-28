@@ -1,9 +1,9 @@
 # My coding playground
-- This is where I practice javascript.
+This is where I practice javascript.
 
 ![code image](https://sg.fiverrcdn.com/photos/111093480/original/b80ac286d071ddfcfbaef6cf921e24221224841e.png?1525029870)
 
-> The Nerd's Creed:
+### The Nerd's Creed:
 >
 >This is my code. There are many lines like it, but these are mine.
 My code is my best friend. It is my life. I must master it as I must master my life.
@@ -35,4 +35,10 @@ $ cd code-log
 $ http-server
 ```
 
-*If webpack exists, look at its readme and follow the directions there. Otherwise most of this can be seen through that http-server. just navigate to whatever HTML file and open the dev tools. If no HTML, I logged the function directly in the IDE.*
+*If webpack exists, look at its readme and follow the directions there.
+
+Otherwise most of this can be seen through that http-server.
+
+Navigate to an HTML file, then open the dev tools.
+
+If no HTML, I logged the function directly in the IDE.*
