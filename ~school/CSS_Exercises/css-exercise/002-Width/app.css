@@ -1,0 +1,25 @@
+div {
+  color: white;
+  background: blue;
+  margin-bottom: 20px;
+}
+
+/* Code Under This Line */
+
+/* 1/2 le width del bowser */
+
+.half {
+  width: 50%;
+}
+
+/* one quart hair the width of bowswer */
+
+.fourth {
+  width: 25%;
+}
+
+/* EIGTH */
+
+.eighth {
+  width: 12.25%;
+}

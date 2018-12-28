@@ -1,0 +1,35 @@
+img {
+  max-width: 100%;
+}
+
+/* Code Under This Line */
+
+
+
+
+/* first of types */
+
+div:first-of-type {
+  border: 10px solid red;
+}
+
+/* down the line! number 2 in this case*/
+
+div:nth-of-type(2) {
+  border: 10px dashed blue;
+}
+
+/* down to the third .. left green 10px */
+
+div:nth-of-type(3) {
+  border-left: 10px solid green;
+}
+
+/* last of type! yahoo*/
+
+div:last-of-type {
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  border-left: 5px solid blue;
+  border-right: 5px solid blue;
+}

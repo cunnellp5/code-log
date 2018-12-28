@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>canvasshole</title>
+</head>
+<body>
+  <canvas id='canvas' width = '300' height = '300'></canvas>
+  <script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    // ctx.strokeStyle = 'red';
+    // ctx.strokeRect(50,10,50,50)
+    // ctx.strokeRect(70,50,10,30)
+    // ctx.strokeRect(25,70,100,10)
+    // ctx.strokeRect(45,80,60,60)
+    // ctx.strokeRect(45,70,10,100)
+    // ctx.strokeRect(95,70,10,100)
+    // ctx.fillStyle = 'blue';
+    // ctx.fillRect(100,60,50,50)
+    // ctx.fillRect(120,100,10,30)
+    // ctx.fillRect(75,120,100,10)
+    // ctx.fillRect(95,130,60,60)
+    // ctx.fillRect(95,120,10,100)
+    // ctx.fillRect(145,120,10,100)
+    // ctx.strokeStyle = 'green';
+    // ctx.strokeRect(150,110,50,50)
+    // ctx.strokeRect(170,150,10,30)
+    // ctx.strokeRect(125,170,100,10)
+    // ctx.strokeRect(145,180,60,60)
+    // ctx.strokeRect(145,170,10,100)
+    // ctx.strokeRect(195,170,10,100)
+
+    ctx.strokeStyle = 'red';
+    // ctx.strokeRect(25,5,25,25)
+    ctx.beginPath();
+    ctx.arc(37,16,14,0, Math.PI * 2, false)
+    ctx.stroke();
+    ctx.strokeRect(35,25,5,15)
+    ctx.strokeRect((25/2),35,50,5)
+    ctx.strokeRect((45/2),40,30,30)
+    ctx.strokeRect((45/2),35,5,50)
+    ctx.strokeRect((95/2),35,5,50)
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(50,30,25,25)
+    ctx.fillRect(60,50,5,15)
+    ctx.fillRect((75/2),60,50,5)
+    ctx.fillRect((95/2),65,30,30)
+    ctx.fillRect((95/2),60,5,50)
+    ctx.fillRect((145/2),60,5,50)
+    ctx.strokeStyle = 'green';
+
+    // ctx.strokeRect((150/2),(110/2),25,25)
+    ctx.beginPath();
+    ctx.arc(88,66,14,0, Math.PI * 2, false)
+    ctx.stroke();
+    ctx.strokeRect((170/2),(150/2),5,15)
+    ctx.strokeRect((125/2),(170/2),50,5)
+    ctx.strokeRect((145/2),(180/2),30,30)
+    ctx.strokeRect((145/2),(170/2),5,50)
+    ctx.strokeRect((195/2),(170/2),5,50)
+
+
+    // ctx.strokeStyle = 'Turquoise';
+    // ctx.lineWidth = 4;
+    // ctx.beginPath();
+    // ctx.moveTo(10,10);
+    // ctx.lineTo(60,60);
+    // ctx.moveTo(60,10);
+    // ctx.lineTo(10,60);
+    // ctx.stroke();
+    //
+    // ctx.lineWidth = 2;
+    // ctx.strokeStyle = 'Green';
+    //
+    // ctx.beginPath();
+    // ctx.arc(50,50,20,0, Math.PI * 2, false)
+    // ctx.stroke();
+
+    // for (var i = 0; i < 8; i++) {
+    //   ctx.strokeRect(i*50,i*10,50,50)
+    //   ctx.strokeRect(i*70,i*50,10,30)
+    //   ctx.strokeRect(i*25,i*70,100,10)
+    //   ctx.strokeRect(i*45,i*80,60,60)
+    //   ctx.strokeRect(i*45,i*70,10,100)
+    //   ctx.strokeRect(i*95,i*70,10,100)
+    // }
+
+  </script>
+</body>
+</html>

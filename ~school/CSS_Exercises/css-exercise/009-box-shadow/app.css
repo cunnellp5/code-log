@@ -1,0 +1,35 @@
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  padding: 0px;
+
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+
+}
+
+
+/* Your Code Goes Under This Line */
+
+
+/* shadow box */
+
+.box.subtle {
+  box-shadow: 10px 10px 5px #888;
+}
+
+/*color philed */
+
+.box.technicolor {
+  box-shadow: 40px -3px 20px red, -40px -30px 5px blue, -4px 30px 10px lime;
+}

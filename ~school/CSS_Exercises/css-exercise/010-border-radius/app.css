@@ -1,0 +1,48 @@
+p {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h4 {
+  margin-top: 40px;
+}
+
+.post {
+  border: 1px solid rgba(000,000,000,0.2);
+  padding: 10px;
+  max-width: 650px;
+}
+
+.post > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Your Code Goes Under This Line */
+
+.circle.full {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background: black;
+}
+
+.circle.outline {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 2px solid black
+}
+
+.topLeft {
+  border: solid black 2px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}

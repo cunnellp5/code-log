@@ -1,0 +1,28 @@
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(000,000,000,0.1);
+}
+
+
+/* Your Code Goes Under This Line */
+
+.subtle {
+  transition: 1s;
+}
+
+.subtle:hover {
+  transition: 1s;
+  box-shadow: 1px 1px 8px 1px black;
+  opacity: 0.1;
+}

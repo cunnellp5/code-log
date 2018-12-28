@@ -1,0 +1,36 @@
+div {
+  background: #222;
+  margin-bottom: 20px;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.outside {
+  height: 150px;
+}
+
+/* Code Under This Line */
+
+/* 100 px section */
+
+.short {
+  height: 100px;
+}
+
+/* 200 px box*/
+
+.tall {
+  height: 200px;
+}
+
+
+/* divs in divs! so no pixels here. gotta use
+ the inside to span 100% of the outside box,
+  sukka */
+
+.inside {
+  100%
+}

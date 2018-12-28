@@ -1,0 +1,19 @@
+{
+  "name": "js-object-intro",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gSchool/js-object-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gSchool/js-object-intro/issues"
+  },
+  "homepage": "https://github.com/gSchool/js-object-intro#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
