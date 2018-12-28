@@ -1,8 +1,8 @@
-* Playground
+# Playground
 
 > This is a large repository for loads of practice problems taken from several different resources. This is for my personal interest.
 
-*** Contents:
+### Contents:
 - codeWars
 - codefights
 - DailyProgrammer
@@ -11,7 +11,7 @@
 - hundreds of mdn js questions (JS-exercises, WIP)
 - small apps that do stupid things in the browser that will never get deployed
 
-*** Spin it up:
+### Spin it up:
 
 ```
 $ git clone 'theurl'
