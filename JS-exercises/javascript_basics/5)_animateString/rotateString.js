@@ -43,7 +43,6 @@ const changeTimeWithInput = () => {
 }
 // call back function to reset the timer
 const handleUpdate = function() {
-  console.log(this)
   speed.innerHTML = `Current speed: ${this.value}`
   timer.reset(this.value)
 }
