@@ -1,9 +1,7 @@
-# Playground
+# My coding playground
+- This is where I practice javascript.
 
 ![code image](https://sg.fiverrcdn.com/photos/111093480/original/b80ac286d071ddfcfbaef6cf921e24221224841e.png?1525029870)
-
-
-## This is for my personal interest. This is where I practice javascript.
 
 > The Nerd's Creed:
 >
@@ -15,9 +13,9 @@ My code is my best friend. It is my life. I must master it as I must master my l
 >My code and I know that what counts in computers is not the number of lines we type, the noise of our keyboard, nor the farts we make. We know that it is the functionality that count. We will code ...
 >
 >My code is human, even as I, because it is my life. Thus, I will learn it as a brother. I will learn its weaknesses, its strength, its parts, its accessories, its information processing and its communication. I will keep my code clean and ready, even as I am clean and ready. We will become part of each other. We will ...
-
+>
 >Before my manager, I swear this creed. My code and I are the defenders of my company. We are the masters of bugs. We are the saviors of my life.
-
+>
 >So be it, until production code is ready and there are no bugs, but peace!
 
 ### Contents:
@@ -33,8 +31,8 @@ My code is my best friend. It is my life. I must master it as I must master my l
 
 ```
 $ git clone 'theurl'
-$ cd codewars-log
+$ cd code-log
 $ http-server
 ```
 
-> If webpack exists, look at its readme and follow the directions there. Otherwise most of this can be seen through that http-server. just navigate to whatever HTML file and open the dev tools. If no HTML, I logged the function directly in the IDE.
+*If webpack exists, look at its readme and follow the directions there. Otherwise most of this can be seen through that http-server. just navigate to whatever HTML file and open the dev tools. If no HTML, I logged the function directly in the IDE.*
