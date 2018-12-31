@@ -82,7 +82,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#animalMap()', function () {
+  describe('#animalMap()', function () {
     it('with no parameters, returns the animals categorized by location', function () {
       var result   = zoo.animalMap();
       var expected = {

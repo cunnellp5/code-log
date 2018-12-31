@@ -47,7 +47,23 @@ function animalCount (species) {
 };
 
 function animalMap (options) {
-  // your code here
+  var animalObj = {};
+  for(var animal in data.animals) {
+    let zoo = data.animals[animal];
+    let names = zoo.residents.map(el => el.name);
+
+    if(options.includeNames) {
+      animalObj[zoo.location] = {[zoo.name]: names}
+    }
+
+    if(!animalObj[zoo.location]) {
+      animalObj[zoo.location] = [zoo.name]
+    } else {
+      animalObj[zoo.location].push(zoo.name)
+    }
+
+  }
+  return animalObj;
 };
 
 function animalPopularity (rating) {
