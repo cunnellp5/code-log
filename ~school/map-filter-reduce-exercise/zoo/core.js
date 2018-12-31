@@ -16,7 +16,7 @@ function entryCalculator (entrants) {
 };
 
 function schedule (dayName) {
-  answer = {}
+  var answer = {};
   for (var day in data.hours) {
     let open = data.hours[day].open;
     let close = data.hours[day].close;
@@ -34,7 +34,16 @@ function schedule (dayName) {
 };
 
 function animalCount (species) {
-  
+  var animalObj = {};
+  for(var animal in data.animals) {
+    let zoo = data.animals[animal];
+    animalObj[zoo.name] = zoo.residents.length;
+  }
+  if(!species) {
+    return animalObj
+  } else {
+    return animalObj[species]
+  }
 };
 
 function animalMap (options) {
