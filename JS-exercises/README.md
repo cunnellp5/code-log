@@ -22,21 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-72. Write a JavaScript program to check if the first and last elements are equal of a given array of integers length 3.
-console.log(first_last_same([10, 20, 30])); // false
-console.log(first_last_same([10, 20, 30, 10])); // true
-console.log(first_last_same([20, 20, 20])); // true
-
-73. Write a JavaScript program to reverse the elements of a given array of integers length 3.
-console.log(reverse3([5, 4, 3])); // [3,4,5]
-console.log(reverse3([1, 0, -1])); // [-1,0,1]  
-console.log(reverse3([2, 3, 1])); // [1,3,2]
-
-74. Write a JavaScript program to find the larger value between the first or last and set all the other elements with that value. Display the new array.
-console.log(all_max([20, 30, 40])); // [40,40,40]
-console.log(all_max([-7, -9, 0])); // [0,0,0]
-console.log(all_max([12, 10, 3])); // [12,12,12]
-
 75. Write a JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
 console.log(middle_elements([1, 2, 3], [1, 5, 6])); // [2,5]  
 console.log(middle_elements([3, 3, 3], [2, 8, 0])); // [3,8]  
