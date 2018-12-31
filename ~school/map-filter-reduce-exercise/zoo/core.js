@@ -52,16 +52,25 @@ function animalMap (options) {
     let zoo = data.animals[animal];
     let names = zoo.residents.map(el => el.name);
 
-    if(options.includeNames) {
-      animalObj[zoo.location] = {[zoo.name]: names}
+    let result;
+    if(options && options.includeNames) {
+      if(options.sex) {
+        let gender = zoo.residents.filter(el => {
+          if(options.sex === el.sex) return el;
+        }).map(el => el.name);
+        result = {[zoo.name]: gender};
+      } else {
+        result = {[zoo.name]: names};
+      }
+    } else {
+      result = zoo.name;
     }
 
     if(!animalObj[zoo.location]) {
-      animalObj[zoo.location] = [zoo.name]
+      animalObj[zoo.location] = [result]
     } else {
-      animalObj[zoo.location].push(zoo.name)
+      animalObj[zoo.location].push(result)
     }
-
   }
   return animalObj;
 };
