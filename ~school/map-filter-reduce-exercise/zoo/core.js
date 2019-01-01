@@ -92,7 +92,22 @@ function animalPopularity (rating) {
 };
 
 function animalsByIds (ids) {
-  // your code here
+  if(!ids) return [];
+
+  let newIds = ids;
+  if(!Array.isArray(ids)) {
+    newIds = Array.of(ids);
+  }
+  let result = [];
+  for(var animal in data.animals) {
+    let zoo = data.animals[animal];
+    newIds.forEach((id) => {
+      if(zoo.id === id){
+        result.push(zoo);
+      }
+    })
+  }
+  return result
 };
 
 function animalByName (animalName) {
