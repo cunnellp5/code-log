@@ -1,17 +1,12 @@
 data = require('./data');
 
 function entryCalculator (entrants) {
-  if (entrants === undefined) {
-    return 0
-  }
-  if (Object.keys(entrants).length === 0) {
-    return 0
-  }
-  if (entrants.Adult == 0 && entrants.Child == 0 && entrants.Senior == 0) {
-    return 0;
-  }
+  if (entrants === undefined) return 0;
+  if (Object.keys(entrants).length === 0) return 0;
+  if (entrants.Adult == 0 && entrants.Child == 0 && entrants.Senior == 0) return 0;
+
   if (entrants.Adult > 0 || entrants.Child > 0 || entrants.Senior > 0) {
-    return (entrants.Adult * data.prices.Adult + entrants.Child * data.prices.Child + entrants.Senior * data.prices.Senior)
+    return (entrants.Adult * data.prices.Adult + entrants.Child * data.prices.Child + entrants.Senior * data.prices.Senior);
   }
 };
 
@@ -51,8 +46,8 @@ function animalMap (options) {
   for(var animal in data.animals) {
     let zoo = data.animals[animal];
     let names = zoo.residents.map(el => el.name);
-
     let result;
+
     if(options && options.includeNames) {
       if(options.sex) {
         let gender = zoo.residents.filter(el => {
@@ -76,7 +71,24 @@ function animalMap (options) {
 };
 
 function animalPopularity (rating) {
-  // your code here
+  let animalObj = {};
+
+  for (var animal in data.animals) {
+    let zoo = data.animals[animal];
+    let popular = zoo.popularity;
+    let animalName = zoo.name;
+    if(!animalObj[popular]) {
+      animalObj[popular] = [animalName]
+    } else {
+      animalObj[popular].push(animalName)
+    }
+  }
+
+  if(!rating) {
+    return animalObj;
+  } else {
+    return animalObj[rating]
+  }
 };
 
 function animalsByIds (ids) {

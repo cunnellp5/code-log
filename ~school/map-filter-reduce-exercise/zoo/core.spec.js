@@ -138,7 +138,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#animalPopularity()', function () {
+  describe('#animalPopularity()', function () {
     it ('with no parameters, returns animals sorted into groups by popularity', function () {
       var result = zoo.animalPopularity();
       var expected = { '2': [ 'frogs' ],
