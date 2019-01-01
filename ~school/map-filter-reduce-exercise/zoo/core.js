@@ -111,8 +111,21 @@ function animalsByIds (ids) {
 };
 
 function animalByName (animalName) {
-  // your code here
+  if(!animalName) return {};
+  let result
+  for(var animal in data.animals) {
+    let zoo = data.animals[animal];
+    let residentsRay = zoo.residents;
+    residentsRay.forEach(el => {
+      el['species'] = zoo.name;
+      if(animalName === el.name) {
+        result = el;
+      }
+    })
+  }
+  return result; // { name: 'Clay', sex: 'male', age: 4, species: 'giraffes' }
 };
+
 
 function employeesByIds (ids) {
   // your code here

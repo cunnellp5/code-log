@@ -212,7 +212,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#animalByName()', function () {
+  describe('#animalByName()', function () {
     it('with no parameters, returns an empty object', function () {
       var result   = zoo.animalByName();
       var expected = {};
