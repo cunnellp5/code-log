@@ -129,17 +129,19 @@ function animalByName (animalName) {
 
 function employeesByIds (ids) {
   if(!ids) return [];
+  let newIds = ids;
+  if(!Array.isArray(ids)) {
+    newIds = Array.of(ids);
+  }
   let employeeObj = {};
   for(var employee in data.employees) {
     let worker = data.employees[employee];
-    employeeObj[worker.id] = worker
-
+    employeeObj[worker.id] = worker;
   }
   let result = [];
-  ids.forEach((el) =>  {
-   result.push(employeeObj[ids])
+  newIds.forEach((el) =>  {
+    result.push(employeeObj[el])
   })
-  console.log(result);
   return result
 };
 
