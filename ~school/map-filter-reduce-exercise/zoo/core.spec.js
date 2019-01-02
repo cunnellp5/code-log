@@ -228,7 +228,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#employeesByIds()', function () {
+  describe('#employeesByIds()', function () {
     it('with no parameters, returns an empty array', function () {
       var result   = zoo.employeesByIds();
       var expected = [];
