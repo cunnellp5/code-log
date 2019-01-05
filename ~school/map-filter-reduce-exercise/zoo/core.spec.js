@@ -278,7 +278,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#employeeByName()', function () {
+  describe('#employeeByName()', function () {
     it('with no parameters, returns an empty object', function () {
       var result   = zoo.employeeByName();
       var expected = {};

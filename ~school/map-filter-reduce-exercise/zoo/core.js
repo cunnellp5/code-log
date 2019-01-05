@@ -146,7 +146,13 @@ function employeesByIds (ids) {
 };
 
 function employeeByName (employeeName) {
-  // your code here
+  if(!employeeName) return {};
+  for(var employee in data.employees) {
+    let worker = data.employees[employee]
+    if(Object.values(worker).includes(employeeName)){
+      return worker
+    }
+  }
 };
 
 function managersForEmployee (idOrName) {
