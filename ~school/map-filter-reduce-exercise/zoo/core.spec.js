@@ -317,7 +317,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#managersForEmployee()', function () {
+  describe('#managersForEmployee()', function () {
     it('with an employee\'s id, returns the names of that employee\'s managers', function () {
       var result   = zoo.managersForEmployee('b0dc644a-5335-489b-8a2c-4e086c7819a2');
       var expected = {

@@ -149,14 +149,30 @@ function employeeByName (employeeName) {
   if(!employeeName) return {};
   for(var employee in data.employees) {
     let worker = data.employees[employee]
-    if(Object.values(worker).includes(employeeName)){
+    if(Object.values(worker).includes(employeeName)) {
       return worker
     }
   }
 };
 
 function managersForEmployee (idOrName) {
-  // your code here
+  let managerNamedObj = {}
+
+  // below loops original obj and redefines managers array for next loop
+  for (employee in data.employees){
+    let worker = data.employees[employee];
+    let managers = worker.managers
+
+    managers.forEach(id => console.log(id))
+  }
+
+  // for(manager in managerNamedObj) {
+  //   let worker = managerNamedObj[manager];
+
+  //   if(idOrName === worker.id) {
+  //     return worker // managers need ids replaced with the name
+  //   }
+  // }
 };
 
 function employeeCoverage (idOrName) {
