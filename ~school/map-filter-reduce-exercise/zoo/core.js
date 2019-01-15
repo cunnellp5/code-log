@@ -156,23 +156,21 @@ function employeeByName (employeeName) {
 };
 
 function managersForEmployee (idOrName) {
-  let managerNamedObj = {}
-
-  // below loops original obj and redefines managers array for next loop
   for (employee in data.employees){
     let worker = data.employees[employee];
     let managers = worker.managers
-
-    managers.forEach(id => console.log(id))
+    managers.forEach((id) => {
+      data.employees.forEach((el) => {
+        if(el.id === id) {
+          worker.managers.shift()
+          worker.managers.push(el.firstName + ' ' + el.lastName);
+        }
+      })
+    });
+    if(idOrName === worker.id || idOrName === worker.firstName || idOrName === worker.lastName) {
+      return worker
+    }
   }
-
-  // for(manager in managerNamedObj) {
-  //   let worker = managerNamedObj[manager];
-
-  //   if(idOrName === worker.id) {
-  //     return worker // managers need ids replaced with the name
-  //   }
-  // }
 };
 
 function employeeCoverage (idOrName) {
