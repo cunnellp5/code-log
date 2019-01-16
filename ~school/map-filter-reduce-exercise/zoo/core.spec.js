@@ -362,7 +362,7 @@ describe('Zoo', function() {
     });
   });
 
-  xdescribe('#employeeCoverage()', function () {
+  describe('#employeeCoverage()', function () {
     it('with no parameters, returns a list of employees and the animals they\'re responsible for', function () {
       var result   = zoo.employeeCoverage();
       var expected = { 'Nigel Nelson': [ 'lions', 'tigers' ],

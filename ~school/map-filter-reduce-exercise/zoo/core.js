@@ -174,9 +174,26 @@ function managersForEmployee (idOrName) {
 };
 
 function employeeCoverage (idOrName) {
-  // your code here
-};
+  let result = {};
+  for (employee in data.employees) {
+    let worker = data.employees[employee];
+    let empAnimal = worker.responsibleFor;
+    empAnimal.forEach((id) => {
+      data.animals.forEach((animal) => {
+        if(animal.id === id) {
+          worker.responsibleFor.shift()
+          worker.responsibleFor.push(animal.name);
+        }
+      })
+    });
+    let key = `${worker.firstName} ${worker.lastName}`;
+    let value = worker.responsibleFor;
 
+    result[key] = value;
+  }
+  console.log(result)
+  return result
+};
 
 module.exports = {
   entryCalculator: entryCalculator,
