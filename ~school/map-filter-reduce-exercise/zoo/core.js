@@ -176,9 +176,16 @@ function managersForEmployee (idOrName) {
 function employeeCoverage (idOrName) {
   // console.log(data.animals,'ANIMALS')
   let result = {};
+  let getName;
+
   for (employee in data.employees) {
     let worker = data.employees[employee];
     let empAnimal = worker.responsibleFor;
+
+    // if(worker.id === idOrName) {
+    //   getName = `${worker.firstName} ${worker.lastName}`
+    // }
+
     empAnimal.forEach((id) => {
       data.animals.forEach((animal) => {
         if(animal.id === id) {
@@ -187,11 +194,14 @@ function employeeCoverage (idOrName) {
           } else {
             result[`${worker.firstName} ${worker.lastName}`].push(animal.name)
           }
+          console.log(worker)
+          
           // console.log(worker.firstName + animal.name)
         //   worker.responsibleFor.shift()
         //   worker.responsibleFor.push(animal.name);
         }
       })
+      
       // console.log(worker.responsibleFor, 'VALUVLUVLUVLUVLU')
     });
     // let key = `${worker.firstName} ${worker.lastName}`;
@@ -199,10 +209,13 @@ function employeeCoverage (idOrName) {
     // result[key] = value;
   }
 
-  console.log(result, '**************************')
+  // if(getName) {
+  //   console.log(result.includes(getName))
+  // }
   if(!idOrName) {
     return result
   }
+
 };
 
 module.exports = {
