@@ -174,6 +174,7 @@ function managersForEmployee (idOrName) {
 };
 
 function employeeCoverage (idOrName) {
+  // console.log(data.animals,'ANIMALS')
   let result = {};
   for (employee in data.employees) {
     let worker = data.employees[employee];
@@ -181,18 +182,27 @@ function employeeCoverage (idOrName) {
     empAnimal.forEach((id) => {
       data.animals.forEach((animal) => {
         if(animal.id === id) {
-          worker.responsibleFor.shift()
-          worker.responsibleFor.push(animal.name);
+          if(!result[`${worker.firstName} ${worker.lastName}`]) {
+            result[`${worker.firstName} ${worker.lastName}`] = [animal.name]
+          } else {
+            result[`${worker.firstName} ${worker.lastName}`].push(animal.name)
+          }
+          // console.log(worker.firstName + animal.name)
+        //   worker.responsibleFor.shift()
+        //   worker.responsibleFor.push(animal.name);
         }
       })
+      // console.log(worker.responsibleFor, 'VALUVLUVLUVLUVLU')
     });
-    let key = `${worker.firstName} ${worker.lastName}`;
-    let value = worker.responsibleFor;
-
-    result[key] = value;
+    // let key = `${worker.firstName} ${worker.lastName}`;
+    // let value = worker.responsibleFor;
+    // result[key] = value;
   }
-  console.log(result)
-  return result
+
+  console.log(result, '**************************')
+  if(!idOrName) {
+    return result
+  }
 };
 
 module.exports = {
