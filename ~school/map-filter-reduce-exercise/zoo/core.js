@@ -174,46 +174,46 @@ function managersForEmployee (idOrName) {
 };
 
 function employeeCoverage (idOrName) {
-  // console.log(data.animals,'ANIMALS')
-  let result = {};
+  let fullname = {};
+  let id = {};
+  let first = {};
+  let last = {};
   let getName;
 
   for (employee in data.employees) {
     let worker = data.employees[employee];
     let empAnimal = worker.responsibleFor;
 
-    // if(worker.id === idOrName) {
-    //   getName = `${worker.firstName} ${worker.lastName}`
-    // }
-
     empAnimal.forEach((id) => {
       data.animals.forEach((animal) => {
         if(animal.id === id) {
-          if(!result[`${worker.firstName} ${worker.lastName}`]) {
-            result[`${worker.firstName} ${worker.lastName}`] = [animal.name]
+          if(!fullname[`${worker.firstName} ${worker.lastName}`]) {
+            fullname[`${worker.firstName} ${worker.lastName}`] = [animal.name]
+            // id[`${worker.id}`] = [animal.name];
+            first[`${worker.firstName}`] = [animal.name];
+            last[`${worker.lastName}`] = [animal.name];
           } else {
-            result[`${worker.firstName} ${worker.lastName}`].push(animal.name)
+            fullname[`${worker.firstName} ${worker.lastName}`].push(animal.name)
+            // id[`${worker.id}`].push(animal.name);
+            first[`${worker.firstName}`].push(animal.name);
+            last[`${worker.lastName}`].push(animal.name);
           }
-          console.log(worker)
-          
+          // console.log(worker)
+
           // console.log(worker.firstName + animal.name)
         //   worker.responsibleFor.shift()
         //   worker.responsibleFor.push(animal.name);
         }
       })
-      
-      // console.log(worker.responsibleFor, 'VALUVLUVLUVLUVLU')
+
     });
     // let key = `${worker.firstName} ${worker.lastName}`;
     // let value = worker.responsibleFor;
-    // result[key] = value;
+    // fullname[key] = value;
   }
-
-  // if(getName) {
-  //   console.log(result.includes(getName))
-  // }
+  // console.log(first)
   if(!idOrName) {
-    return result
+    return fullname
   }
 
 };
