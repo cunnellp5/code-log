@@ -22,16 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-75. Write a JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
-console.log(middle_elements([1, 2, 3], [1, 5, 6])); // [2,5]  
-console.log(middle_elements([3, 3, 3], [2, 8, 0])); // [3,8]  
-console.log(middle_elements([4, 2, 7], [2, 4, 5])); // [2,4]
-
-76. Write a JavaScript program to create a new array taking the first and last elements from a given array of integers and length must be greater or equal to 1.
-console.log(started([20, 20, 30])); // [20,30]
-console.log(started([5, 2, 7, 8])); // [5,8]
-console.log(started([17, 12, 34, 78])); // [17,78]
-
 77. Write a JavaScript program to test if an array of integers of length 2 contains 1 or a 3.
 console.log(contins13([1, 5])); // true  
 console.log(contins13([2, 3])); // true  
