@@ -6,7 +6,7 @@ import * as seventyfour from './74';
 import * as seventyfive from './75';
 import * as seventysix from './76';
 import * as seventyseven from './77';
-// import * as seventyeight from './78';
+import * as seventyeight from './78';
 // import * as seventynine from './79';
 
 const data = [
@@ -18,7 +18,7 @@ const data = [
   seventyfive,
   seventysix,
   seventyseven,
-  // seventyeight,
+  seventyeight,
   // seventynine,
 ];
 export { data };

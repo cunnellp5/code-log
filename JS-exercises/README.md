@@ -22,10 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-78. Write a JavaScript program to test if an array of integers of length 2 does not contain 1 or a 3.
-console.log(is13([7, 8])); // true
-console.log(is13([3, 2])); // false
-console.log(is13([0, 1])); // false
 
 79. Write a JavaScript program to test if a given array of integers contains 30 and 40 twice. The array length should be 0, 1, or 2.
 console.log(twice3040([30, 30])); // true
