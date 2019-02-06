@@ -22,11 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-77. Write a JavaScript program to test if an array of integers of length 2 contains 1 or a 3.
-console.log(contins13([1, 5])); // true  
-console.log(contins13([2, 3])); // true  
-console.log(contins13([7, 5])); // false
-
 78. Write a JavaScript program to test if an array of integers of length 2 does not contain 1 or a 3.
 console.log(is13([7, 8])); // true
 console.log(is13([3, 2])); // false
