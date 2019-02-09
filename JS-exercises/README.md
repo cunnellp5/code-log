@@ -22,11 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-80. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
-console.log(swap([1, 2, 3, 4])); // [4,2,3,1]  
-console.log(swap([0, 2, 1])); // [1,2,0]  
-console.log(swap([3])); // [3]
-
 81. Write a JavaScript program to add two digits of a given positive integer of length two.
 console.log(add_two_digits(25)) // 7
 console.log(add_two_digits(50)) // 5
