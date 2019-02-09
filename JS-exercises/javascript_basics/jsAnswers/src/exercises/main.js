@@ -6,7 +6,8 @@ import * as thirties from './thirties/index';
 import * as forties from './forties/index';
 import * as fifties from './fifties/index';
 import * as sixties from './sixties/index';
-import * as seventies from './sixties/index';
+import * as seventies from './seventies/index';
+import * as eighties from './eighties/index';
 
 const loopMe = [
   teens,
@@ -15,7 +16,8 @@ const loopMe = [
   forties,
   fifties,
   sixties,
-  seventies
+  seventies,
+  eighties
 ]
 const masterArray = []
 

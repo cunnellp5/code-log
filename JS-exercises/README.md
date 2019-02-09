@@ -22,13 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-
-79. Write a JavaScript program to test if a given array of integers contains 30 and 40 twice. The array length should be 0, 1, or 2.
-console.log(twice3040([30, 30])); // true
-console.log(twice3040([40, 40])); // true
-console.log(twice3040([20, 20])); // false
-console.log(twice3040([30])); // false
-
 80. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
 console.log(swap([1, 2, 3, 4])); // [4,2,3,1]  
 console.log(swap([0, 2, 1])); // [1,2,0]  
