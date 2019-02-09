@@ -1,5 +1,5 @@
 function swap(array) {
-  let result = array.length < 4 ? array.reverse() : greater(array);
+  let result = greater(array);
   return result;
 }
 
