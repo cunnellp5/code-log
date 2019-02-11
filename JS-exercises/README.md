@@ -22,9 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-81. Write a JavaScript program to add two digits of a given positive integer of length two.
-console.log(add_two_digits(25)) // 7
-console.log(add_two_digits(50)) // 5
 
 82. Write a JavaScript to add two positive integers without carry.
 console.log(add_two_int_without_carrying(222, 911)); // 133
