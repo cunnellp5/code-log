@@ -23,10 +23,6 @@ list to tackle:
 questions and example results hardcoded for traveling purposes:
 
 
-82. Write a JavaScript to add two positive integers without carry.
-console.log(add_two_int_without_carrying(222, 911)); // 133
-console.log(add_two_int_without_carrying(200, 900)); // 100
-
 83. Write a JavaScript to find the longest string from an given array of strings.
 console.log(longest_string(['a', 'aa', 'aaa', 'aaaaa','aaaa'])) // ["aaaaa"]
 
