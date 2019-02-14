@@ -22,10 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-
-83. Write a JavaScript to find the longest string from an given array of strings.
-console.log(longest_string(['a', 'aa', 'aaa', 'aaaaa','aaaa'])) // ["aaaaa"]
-
 84. Write a JavaScript to replace each character of a given string by the next one in the English alphabet.  Go to the editor
 Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.
 console.log(alphabet_char_Shift("abcdxyz")) // bcdeyza
