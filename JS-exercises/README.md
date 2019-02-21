@@ -22,10 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-84. Write a JavaScript to replace each character of a given string by the next one in the English alphabet.  Go to the editor
-Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.
-console.log(alphabet_char_Shift("abcdxyz")) // bcdeyza
-
 
 85. Write a JavaScript code to divide an given array of positive integers into two parts. First element goes to first part, second element goes to second part, and third element goes to first part and so on. Now compute the sum of two parts and store into an array of size two.
 console.log(alternate_Sums([1, 2, 3, 4, 5, 6])) // [9,12]
