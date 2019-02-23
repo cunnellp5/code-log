@@ -1,14 +1,12 @@
 
-function alphabet_char_Shift(string) {
-  const array = string.split('');
-  const coded = array.map((el) => {
-    let num = el.charCodeAt() + 1;
-    if(num === 123) {
-      num = 97;
-    }
-    return String.fromCharCode(num)
-  }).join('');
-  return coded;
+function alternate_Sums(array) {
+  let firstBin = array
+                .filter((el, idx) => idx % 2 === 0)
+                .reduce((a,b) => a + b)
+  let secondBin = array
+                .filter((el, idx) => idx % 2 !== 0)
+                .reduce((a,b) => a + b)
+  return [firstBin, secondBin]
 }
 
-console.log(alphabet_char_Shift("abcdxyz")) // bcdeyza
+console.log(alternate_Sums([1, 2, 3, 4, 5, 6])) // [9,12]

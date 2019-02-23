@@ -22,10 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-
-85. Write a JavaScript code to divide an given array of positive integers into two parts. First element goes to first part, second element goes to second part, and third element goes to first part and so on. Now compute the sum of two parts and store into an array of size two.
-console.log(alternate_Sums([1, 2, 3, 4, 5, 6])) // [9,12]
-
 86. Write a JavaScript program to find the types of a given angle.  Go to the editor
 Types of angles:
 Acute angle: An angle between 0 and 90 degrees.
