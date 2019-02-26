@@ -39,7 +39,7 @@ input.search {
   margin: 0;
   padding: 0;
   position: relative;
-  /*perspective: 20px;*/
+  /* perspective: 20px; */
 }
 
 .suggestions li {
@@ -51,6 +51,7 @@ input.search {
   padding: 20px;
   transition: background 0.2s;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-transform: capitalize;
 }
@@ -61,7 +62,7 @@ input.search {
 }
 
 .suggestions li:nth-child(odd) {
-  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  transform: perspective(100px) rotateX(-3deg) translateY(4px);
   background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
 }
 
@@ -71,4 +72,15 @@ span.population {
 
 .hl {
   background: #ffc600;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.distance {
+  display: flex;
+  justify-content: flex-end;
 }
