@@ -1,20 +1,22 @@
-const items = document.querySelectorAll('.item');
-
-items.forEach((item) => {
-  // item.addEventListener('mousedown', shifty);
-  item.addEventListener('keydown', shifty);
-})
+const checkboxes = document.querySelectorAll('.inbox input[type=checkbox]');
+let lastClicked;
 
 function shifty(e) {
-  console.log(items);
-  if(e.shiftKey) {
-    const text = this.querySelector('p').innerHTML;
-    console.log(text)
-  } else {
-    console.log('false')
+  let inBetween = false;
+
+  if(e.shiftKey && this.checked) {
+    checkboxes.forEach((checkbox) => {
+      if(this === checkbox || checkbox === lastClicked) {
+        inBetween = !inBetween;
+      }
+      if (inBetween){
+        checkbox.checked = true;
+      }
+    })
   }
-  // console.log(items)
-  // console.log(this.querySelector('p').innerHTML)
+
+  lastClicked = this;
 }
 
-// console.log(item);
+
+checkboxes.forEach((checkbox) => checkbox.addEventListener('click', shifty))
