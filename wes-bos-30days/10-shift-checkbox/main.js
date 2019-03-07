@@ -3,7 +3,6 @@ let lastClicked;
 
 function shifty(e) {
   let inBetween = false;
-
   if(e.shiftKey && this.checked) {
     checkboxes.forEach((checkbox) => {
       if(this === checkbox || checkbox === lastClicked) {
@@ -14,7 +13,6 @@ function shifty(e) {
       }
     })
   }
-
   lastClicked = this;
 }
 
