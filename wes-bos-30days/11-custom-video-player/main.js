@@ -25,16 +25,30 @@ function skip() {
 }
 
 function handleRangeUpdate() {
+  // playbackrate or volume are properties on the video object
   video[this.name] = this.value;
-  console.log(this.name)
-  console.log(this.value)
+}
+
+function handleProgress() {
+  const percent = (video.currentTime / video.duration) * 100;
+  progressBar.style.flexBasis = `${percent}%`;
+}
+
+function scrub(e) {
+  const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+  video.currentTime = scrubTime;
 }
 
 // hook up event listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
+video.addEventListener('timeupdate', handleProgress);
 toggle.addEventListener('click', togglePlay);
-skipButtons.forEach(button => button.addEventListener('click', skip))
-ranges.forEach(slider => slider.addEventListener('change', handleRangeUpdate))
-ranges.forEach(slider => slider.addEventListener('mousemove', handleRangeUpdate))
+skipButtons.forEach(button => button.addEventListener('click', skip));
+ranges.forEach(slider => slider.addEventListener('change', handleRangeUpdate));
+ranges.forEach(slider =>
+  slider.addEventListener('mousemove', handleRangeUpdate)
+);
+progress.addEventListener('click', scrub);
+progress.addEventListener('change', scrub);
