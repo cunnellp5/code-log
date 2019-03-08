@@ -7,8 +7,6 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
-// build functions
-
 function togglePlay() {
   video.paused ? video.play() : video.pause();
   // const method = video.paused ? 'play' : 'pause';
@@ -35,6 +33,7 @@ function handleProgress() {
 }
 
 function scrub(e) {
+  // if (!isScrubbing) return;
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
 }
@@ -50,5 +49,9 @@ ranges.forEach(slider => slider.addEventListener('change', handleRangeUpdate));
 ranges.forEach(slider =>
   slider.addEventListener('mousemove', handleRangeUpdate)
 );
+
+let isScrubbing = false;
 progress.addEventListener('click', scrub);
-progress.addEventListener('change', scrub);
+progress.addEventListener('mousemove', e => isScrubbing && scrub(e));
+progress.addEventListener('mousedown', () => (isScrubbing = true));
+progress.addEventListener('mouseup', () => (isScrubbing = false));
