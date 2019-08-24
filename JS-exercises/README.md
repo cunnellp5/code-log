@@ -22,17 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-86. Write a JavaScript program to find the types of a given angle.  Go to the editor
-Types of angles:
-Acute angle: An angle between 0 and 90 degrees.
-Right angle: An 90 degree angle.
-Obtuse angle: An angle between 90 and 180 degrees.
-Straight angle: A 180 degree angle.
-console.log(angle_Type(47)); // Acute angle.
-console.log(angle_Type(90)); // Right angle.
-console.log(angle_Type(145)); // Obtuse angle.
-console.log(angle_Type(180)); // Straight angle.
-
 87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.
 console.log(array_checking([10,20,30], [10,20,30])); true
 console.log(array_checking([10,20,30], [30,10,20])); false
