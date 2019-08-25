@@ -22,11 +22,6 @@ list to tackle:
 
 questions and example results hardcoded for traveling purposes:
 
-87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.
-console.log(array_checking([10,20,30], [10,20,30])); true
-console.log(array_checking([10,20,30], [30,10,20])); false
-console.log(array_checking([10,20,30,40], [10,30,20,40])); true
-
 88. Write a JavaScript program to check whether two given integers are similar or not, if a given divisor divides both integers and it does not divide either.
 console.log(checking_numbers(10, 25, 5)); true
 console.log(checking_numbers(10, 20, 5)); true
