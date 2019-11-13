@@ -1,0 +1,3 @@
+[submodule "~school/practice/js-scope-iife-and-hoisting-assessment"]
+	path = ~school/practice/js-scope-iife-and-hoisting-assessment
+	url = https://github.com/gSchool/js-scope-iife-and-hoisting-assessment.git
