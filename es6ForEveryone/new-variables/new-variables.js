@@ -32,17 +32,19 @@ points = 59;
 // }
 {
   const name = 'phil'
-  console.log(name)
+  // console.log(name)
 }
 
-
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+  // console.log(i);
   setTimeout(() => {
-    console.log('the number is ' + i);
+    // console.log('the number is ' + i);
   }, 1000)
 }
 // (function () {
 //   var name = 'phil';
 //   console.log(name)
 // })();
+
+console.log(pizza)
+var pizza = 'Deep Dish 🍕'
