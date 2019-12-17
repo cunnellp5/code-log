@@ -19,14 +19,30 @@ let points = 50;
 let winner = false;
 points = 59;
 
-const person = {
-  name: 'phil',
-  age: 22
-}
+// const person = {
+//   name: 'phil',
+//   age: 22
+// }
 
-const phil = Object.freeze(person);
+// const phil = Object.freeze(person);
 
 // if (points > 40) {
 //   console.log('ran')
 //   let winner = true;
 // }
+{
+  const name = 'phil'
+  console.log(name)
+}
+
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+  setTimeout(() => {
+    console.log('the number is ' + i);
+  }, 1000)
+}
+// (function () {
+//   var name = 'phil';
+//   console.log(name)
+// })();
