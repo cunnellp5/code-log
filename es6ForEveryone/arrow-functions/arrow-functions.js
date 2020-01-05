@@ -35,9 +35,22 @@ const win = winners.map((winner, i) => ({
   place: i + 1
 }));
 
-console.table(win);
+// console.table(win);
 
 const ages = [12, 14, 42, 63, 74, 24, 13, 24, 62, 84, 96, 75, 355];
 const old = ages.filter(age => age >= 60);
 
-console.log(old);
+// console.log(old);
+
+const box = document.querySelector(".box");
+box.addEventListener("click", function() {
+  let first = "opening";
+  let second = "open";
+  if (this.classList.contains(first)) {
+    [first, second] = [second, first];
+  }
+  this.classList.toggle(first);
+  setTimeout(() => {
+    this.classList.toggle(second);
+  }, 500);
+});
