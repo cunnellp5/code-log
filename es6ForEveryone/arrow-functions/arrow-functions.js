@@ -54,3 +54,10 @@ box.addEventListener("click", function() {
     this.classList.toggle(second);
   }, 500);
 });
+
+function calculateBill(total, tax = 0.13, tip = 0.15) {
+  return total + total * tax + total * tip;
+}
+
+const totalBill = calculateBill(100, undefined, undefined);
+console.log(totalBill);
