@@ -61,3 +61,12 @@ function calculateBill(total, tax = 0.13, tip = 0.15) {
 
 const totalBill = calculateBill(100, undefined, undefined);
 console.log(totalBill);
+
+
+// *****************************
+
+const button = document.querySelector('#pushy');
+button.addEventListener('click', function() {
+  console.log(this)
+  this.classList.toggle('on')
+})

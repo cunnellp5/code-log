@@ -38,3 +38,9 @@
 .box.open > * {
   transform: translateX(0%);
 }
+button { 
+  font-size: 100px;
+}
+.on { 
+  background: #ffc600; 
+}
