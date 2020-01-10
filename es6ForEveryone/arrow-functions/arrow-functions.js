@@ -99,3 +99,11 @@ Car.prototype.summarize = function() {
 }
 
 // when you need arguments object
+
+const orderChildren = function() {
+  const children = Array.from(arguments);
+  console.log(arguments);
+  return children.map((child, i) => {
+    return `${child} was child #${i}`;
+  })
+}
