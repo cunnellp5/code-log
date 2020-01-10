@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrow Functions</title>
+</head>
+<body>
+
+<ul>
+  <li data-time="5:17">Flexbox Video</li>
+  <li data-time="8:22">Flexbox Video</li>
+  <li data-time="3:34">Redux Video</li>
+  <li data-time="5:23">Flexbox Video</li>
+  <li data-time="7:12">Flexbox Video</li>
+  <li data-time="7:24">Redux Video</li>
+  <li data-time="6:46">Flexbox Video</li>
+  <li data-time="4:45">Flexbox Video</li>
+  <li data-time="4:40">Flexbox Video</li>
+  <li data-time="7:58">Redux Video</li>
+  <li data-time="11:51">Flexbox Video</li>
+  <li data-time="9:13">Flexbox Video</li>
+  <li data-time="5:50">Flexbox Video</li>
+  <li data-time="5:52">Redux Video</li>
+  <li data-time="5:49">Flexbox Video</li>
+  <li data-time="8:57">Flexbox Video</li>
+  <li data-time="11:29">Flexbox Video</li>
+  <li data-time="3:07">Flexbox Video</li>
+  <li data-time="5:59">Redux Video</li>
+  <li data-time="3:31">Flexbox Video</li>
+</ul>
+
+<script>
+    // const data = [];
+  // Select all the list items on the page and convert to array
+    const elements = document.querySelectorAll('li');
+    const data = Array.from(elements);
+
+    // *********************************************************************
+//   // Filter for only the elements that contain the word 'Flexbox'
+//     const flexbox = data.filter((element) => {
+//         const val = element.innerHTML;
+//         const flexbox = val.includes('Flexbox');
+//         return flexbox;
+//     })
+//   // map down to a list of time strings
+//     const timeString = Object.values(
+//         flexbox.map((flex) => {
+//             return flex.getAttribute('data-time');
+//         })
+//     );
+//   // map to an array of seconds
+
+//     const totalSec = timeString.map((time) => {
+//         const colonI = time.indexOf(':');
+//         const min = time.substr(0, colonI);
+//         const seconds = time.substr(colonI + 1, time.length - 1);
+//         const convertHtoM = min * 60;
+//         return convertHtoM + seconds;
+//     })
+
+//     console.log(totalSec)
+//   // reduce to get total
+//     const result = totalSec.reduce((acc, curr) => {
+//         return Number(acc) + Number(curr);
+//     })
+//     console.log(result)
+
+    // ***************************************************
+
+
+  // 🔥 This can also be done in a single .reduce(), but we're practicing arrow functions here, so chain them!
+
+    const result = data
+        .filter((element) => {
+            const val = element.innerHTML;
+            const flexbox = val.includes('Flexbox');
+            return flexbox;
+        })
+        .map((flex) => flex.getAttribute('data-time'))
+        .map((time) => {
+            const colonI = time.indexOf(':');
+            const min = time.substr(0, colonI);
+            const seconds = time.substr(colonI + 1, time.length - 1);
+            const convertHtoM = parseFloat(min) * 60;
+            return convertHtoM + parseFloat(seconds);
+        })
+        .reduce((acc, curr) => {
+            return parseFloat(acc) + parseFloat(curr);
+        });
+
+    console.log(result)
+
+    const numbers = [3,44,5,7,888,64,64,74,7722,4,645,747,47,53,63,4,76,3746];
+    const answer = numbers.filter((number) => number>=70);
+    console.log(answer)
+
+</script>
+</body>
+</html>
