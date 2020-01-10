@@ -63,10 +63,21 @@ const totalBill = calculateBill(100, undefined, undefined);
 console.log(totalBill);
 
 
-// *****************************
+// ***************when not to use fat arrow**************
 
 const button = document.querySelector('#pushy');
 button.addEventListener('click', function() {
   console.log(this)
   this.classList.toggle('on')
 })
+
+// when you need a method to bind to an object
+
+const person = {
+  points: 23,
+  score: () => {
+    this.points++;
+  }
+}
+
+// whn you need to add a prototype method

@@ -39,3 +39,5 @@ $ http-server
 *Otherwise most of this can be seen through that http-server.*  
 *Navigate to an HTML file, then open the dev tools.*  
 *If no HTML, I logged the function directly in the IDE.*  
+
+
