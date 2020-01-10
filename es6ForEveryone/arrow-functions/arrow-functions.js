@@ -75,10 +75,27 @@ button.addEventListener('click', function() {
 
 const person = {
   points: 23,
-  score: () => {
+  score() {
+    console.log(this)
     this.points++;
   }
 }
 
 // whn you need to add a prototype method
 
+class Car {
+  constructor(make, color) {
+    this.make = make;
+    this.color = color;
+  }
+}
+
+const beemer = new Car('bmw', 'blue');
+const subi = new Car('subaru', 'white');
+
+Car.prototype.summarize = function() {
+  console.log(this)
+  return `This car is a ${this.make} in the color ${this.color}`;
+}
+
+// when you need arguments object
