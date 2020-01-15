@@ -26,10 +26,47 @@ const dogs = [
     {name: 'bo', age: 5},
 ];
 
+// const markup = `
+//     <ul class="dogs">
+//         ${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`).join('')}
+//     </ul>
+// `;
+
+
+const song = {
+    name: 'dying to live',
+    artist: 'tupac',
+    // featuring: 'biggie'
+};
+
+// const markup = `
+// <div class="song">
+//     <p>
+//     ${song.name} - ${song.artist}
+//     ${song.featuring ? `(Featuring ${song.featuring})` : ''}
+//     </p>
+// </div>
+// `
+const beer = {
+    name: 'belgian wit',
+    brewery: 'steam whistle brewery',
+    keywords: ['pale', 'cloudy', 'spiced', 'crisp']
+}
+
+function renderKeywords(keywords) {
+    return `
+        <ul>
+        ${keywords.map(keyword => `<li>${keyword}</li>`).join('')}
+        </ul>
+    `
+};
+
 const markup = `
-    <ul class="dogs">
-        ${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7}</li>`).join('')}
-    </ul>
+<div class="beer">
+    <h2>${beer.name}</h2>
+    <p class="brewery">${beer.brewery}</p>
+    ${renderKeywords(beer.keywords)}
+</div>
 `
 
 document.body.innerHTML = markup;
