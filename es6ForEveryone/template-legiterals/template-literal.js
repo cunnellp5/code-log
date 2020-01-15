@@ -1,6 +1,4 @@
-const name = 'Snickers';
-const age = 2;
-const sentence = `my dog ${name} is  ${age * 7} years old`;
+
 
 const person = {
     name: 'phil',
@@ -47,26 +45,44 @@ const song = {
 //     </p>
 // </div>
 // `
-const beer = {
-    name: 'belgian wit',
-    brewery: 'steam whistle brewery',
-    keywords: ['pale', 'cloudy', 'spiced', 'crisp']
+// **********
+// const beer = {
+//     name: 'belgian wit',
+//     brewery: 'steam whistle brewery',
+//     keywords: ['pale', 'cloudy', 'spiced', 'crisp']
+// }
+
+// function renderKeywords(keywords) {
+//     return `
+//         <ul>
+//         ${keywords.map(keyword => `<li>${keyword}</li>`).join('')}
+//         </ul>
+//     `
+// };
+
+// const markup = `
+// <div class="beer">
+//     <h2>${beer.name}</h2>
+//     <p class="brewery">${beer.brewery}</p>
+//     ${renderKeywords(beer.keywords)}
+// </div>
+// `
+// **********************************
+
+function highlight(strings, ...values) {
+    let str = '';
+    strings.forEach((string, index) => {
+        // str += string + (values[index] || '');
+        str += `${string} <span contenteditable class="hl">${values[index] || ''}</span>`;
+    });
+    return str;
 }
 
-function renderKeywords(keywords) {
-    return `
-        <ul>
-        ${keywords.map(keyword => `<li>${keyword}</li>`).join('')}
-        </ul>
-    `
-};
+const name = 'Snickers';
+const age = 2;
+const sentence = highlight`my dog ${name} is  ${age * 7} years old`;
 
-const markup = `
-<div class="beer">
-    <h2>${beer.name}</h2>
-    <p class="brewery">${beer.brewery}</p>
-    ${renderKeywords(beer.keywords)}
-</div>
-`
 
-document.body.innerHTML = markup;
+console.log(sentence)
+
+document.body.innerHTML = sentence;
