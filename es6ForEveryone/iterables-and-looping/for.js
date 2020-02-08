@@ -65,12 +65,25 @@ cuts.shop = 'MM Measts';
 // }
 
 // loop dom collections
-const ps = document.querySelectorAll('p');
-// console.log(ps)
+// const ps = document.querySelectorAll('p');
+// // console.log(ps)
 
-for(const p of ps) {
-    console.log(p)
-    p.addEventListener('click', function() {
-        console.log(this.textContent);
-    })
+// for(const p of ps) {
+//     console.log(p)
+//     p.addEventListener('click', function() {
+//         console.log(this.textContent);
+//     })
+// }
+
+
+const apple = {
+    color: 'red',
+    size: 'medium',
+    weight: 50,
+    sugar: 5
+};
+
+for (const prop in apple) {
+    const value = apple[prop];
+    console.log(value, prop)
 }
