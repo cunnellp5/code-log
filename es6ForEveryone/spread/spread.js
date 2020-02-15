@@ -19,10 +19,39 @@
 //     console.log([...word])
 //     return title
 // });
-const title = document.querySelector('.jump');
-title.innerHTML = sparanWrap(title.textContent);
+// const title = document.querySelector('.jump');
+// title.innerHTML = sparanWrap(title.textContent);
 
 
-function sparanWrap(word) {
-    return [...word].map(letter => `<span>${letter}</span>`).join('');
+// function sparanWrap(word) {
+//     return [...word].map(letter => `<span>${letter}</span>`).join('');
+// }
+
+
+const people = [...document.querySelectorAll('.people p')];
+const names = people.map((person) => person.textContent)
+// console.log(names)
+
+const deepDish = {
+    pizzaName: 'DeepDish',
+    size: 'medium',
+    ingredients: ['marinatirea', 'itamlins sausage', 'doh', 'cheese']
 }
+
+const shoppingList = ['milk', 'flour', ...deepDish.ingredients];
+// console.log(shoppingList)
+
+const comments = [
+    {id: 1, text: 'yaya'},
+    {id: 2, text: 'ya'},
+    {id: 3, text: 'yya'},
+    {id: 4, text: 'y'},
+    {id: 5, text: 'yaaaaa'},
+]
+
+const id = 3;
+const commentIndex = comments.findIndex(comment => comment.id === id);
+console.log(commentIndex, 'hh')
+
+const newComments = [...comments.slice(0, commentIndex), ...comments.slice(commentIndex + 1)];
+console.log(newComments);
