@@ -51,7 +51,25 @@ const comments = [
 
 const id = 3;
 const commentIndex = comments.findIndex(comment => comment.id === id);
-console.log(commentIndex, 'hh')
+// console.log(commentIndex, 'hh')
 
 const newComments = [...comments.slice(0, commentIndex), ...comments.slice(commentIndex + 1)];
-console.log(newComments);
+// console.log(newComments);
+
+
+const inventors = ['einstein', 'newton', 'galileo'];
+const newInventors = ['must', 'jobs'];
+
+// inventors.push.apply(inventors, newInventors);
+
+// spread directly into a function
+inventors.push(...newInventors);
+// console.log(inventors)
+
+const name = ['phil', 'bear'];
+const sayHi = (first, last) => {
+    alert(`hey there ${first} ${last}`);
+}
+
+
+sayHi(...name);
