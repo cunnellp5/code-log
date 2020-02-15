@@ -49,11 +49,11 @@ const comments = [
     {id: 5, text: 'yaaaaa'},
 ]
 
-const id = 3;
-const commentIndex = comments.findIndex(comment => comment.id === id);
+// const id = 3;
+// const commentIndex = comments.findIndex(comment => comment.id === id);
 // console.log(commentIndex, 'hh')
 
-const newComments = [...comments.slice(0, commentIndex), ...comments.slice(commentIndex + 1)];
+// const newComments = [...comments.slice(0, commentIndex), ...comments.slice(commentIndex + 1)];
 // console.log(newComments);
 
 
@@ -66,10 +66,25 @@ const newInventors = ['must', 'jobs'];
 inventors.push(...newInventors);
 // console.log(inventors)
 
-const name = ['phil', 'bear'];
-const sayHi = (first, last) => {
-    alert(`hey there ${first} ${last}`);
-}
+// const name = ['phil', 'bear'];
+// const sayHi = (first, last) => {
+//     alert(`hey there ${first} ${last}`);
+// }
 
 
-sayHi(...name);
+// const convertCurrency = (rate, ...amounts) => {
+//     return amounts.map((amount) => amount * rate);
+// };
+
+// const amounts = convertCurrency(1.54, 10, 23, 52, 1, 56);
+// console.log(amounts)
+
+
+const runner = ['west bos', 22, 5.4, 4, 2, 6, 34];
+// name , runner id , rest are kms
+const [name, id, ...runs] = runner;
+console.log(name, id, runs);
+
+const team = ['phil', 'we', 'beau', 'lux', 'sheena'];
+const [captain, assistant, ...players] = team;
+console.log(captain, assistant, players);
